@@ -209,7 +209,9 @@ export const Navbar = () => {
                     ></path>
                   </svg>
                 </span>
+                <p class='dropdown-heading-text'>Car &amp; taxi</p>
               </div>
+              <a className="dropdown-links" href='/'>Comprehensive Car Insurance</a>
             </div>
             <div className='dropdown-box-item'></div>
             <div className='dropdown-box-item'></div>

@@ -200,3 +200,26 @@ nav {
   width: 32px;
   height: 32px;
 }
+.dropdown-heading-text {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgb(67, 79, 90);
+}
+.dropdown-links {
+  display: flex;
+  font-weight: 500;
+  color: rgb(67, 79, 90);
+  font-size: 14px;
+  margin-bottom: 5px;
+  align-self: flex-start;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 6px;
+}
+ .dropdown-links:hover{
+  background: rgb(241, 243, 248);
+  color: rgb(40, 46, 51);
+  cursor: pointer;
+}
