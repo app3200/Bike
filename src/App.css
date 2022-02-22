@@ -12,6 +12,34 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.ackobikeselect{
+  display: flex;
+  flex-direction: column;
+}
+.ackologotop{
+  margin-top: 1%;
+  /* float: left; */
+}
+.inputboxbike{
+  border: 0.5px solid lightgray;
+  border-radius: 2%;
+  height: 30em
+  
+}
+.whyacko{
+  border: 0.5px solid lightgray;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 2em; */
+}
+.bikeinput{
+ display: grid;
+ grid-template-columns: 50% 30%;
+ grid-gap: 5%;
+ justify-content: center;
+ margin-top: 2em;
+}
 
 .App-header {
   background-color: #282c34;
@@ -22,6 +50,14 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.whyackotitle h2{
+  
+  text-align: left;
 }
 
 .App-link {
