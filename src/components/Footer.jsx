@@ -56,7 +56,7 @@ export function Footer(){
                    
                 </div>
                 <hr style={{width:"90%"}} />
-
+                <p style={{color:"rgb(138, 153, 169)",fontWeight:"bold",marginLeft:"20px"}}>Articles on insurance</p>
                 <div style={{display:"flex"}}>
                     <div style={{width:"30%", margin:"20px",fontSize:"14px"}}>
                         <p style={{fontWeight:"bolder"}}>General articles</p>
