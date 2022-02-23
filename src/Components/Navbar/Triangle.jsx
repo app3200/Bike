@@ -1,6 +1,6 @@
-export const Triangle = ({ see }) => {
+export const Triangle = () => {
   return (
-    <div className='triangle-div' style={{ display: see ? "block" : "none" }}>
+    <div className='triangle-div'>
       <div className='triangle'></div>
     </div>
   );

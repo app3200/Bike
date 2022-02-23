@@ -1,6 +1,6 @@
-export const Dropdown = ({see}) => {
+export const Dropdown = () => {
   return (
-    <div className='dropdown-products' style={{ display: see ? "block" : "none" }}>
+    <div className='dropdown-products'>
       <div className='dropdown-box'>
         <div className='dropdown-box-item'>
           <div className='dropdown-heading-div'>
@@ -165,26 +165,26 @@ export const Dropdown = ({see}) => {
                 <path
                   d='M14.96 6.34847L25.5725 16.9609L21.3427 21.1908C19.9273 22.6061 18.0077 23.4013 16.0061 23.4013C14.0045 23.4013 12.0849 22.6061 10.6696 21.1908V21.1908C9.25425 19.7755 8.45911 17.8558 8.45911 15.8543C8.45911 13.8527 9.25423 11.933 10.6696 10.5177L14.8994 6.28784L14.96 6.34847Z'
                   stroke='#434F5A'
-                  stroke-width='1.5'
-                  stroke-miterlimit='10'
+                  strokeWidth='1.5'
+                  strokeMiterlimit='10'
                 ></path>
                 <path
                   d='M16.9541 8.82951L20.4489 5.33472'
                   stroke='#434F5A'
-                  stroke-width='1.5'
-                  stroke-miterlimit='10'
+                  strokeWidth='1.5'
+                  strokeMiterlimit='10'
                 ></path>
                 <path
                   d='M23.1716 15.0483L26.6664 11.5535'
                   stroke='#434F5A'
-                  stroke-width='1.5'
-                  stroke-miterlimit='10'
+                  strokeWidth='1.5'
+                  strokeMiterlimit='10'
                 ></path>
                 <path
                   d='M10.6663 21.3347L6.66626 25.3347'
                   stroke='#434F5A'
-                  stroke-width='1.5'
-                  stroke-miterlimit='10'
+                  strokeWidth='1.5'
+                  strokeMiterlimit='10'
                 ></path>
                 <path
                   d='M13.1534 16.8339L15.2304 16.3639L14.9727 20.3208L18.5203 15.5604L16.3978 15.9242L16.7465 12.0279L13.1534 16.8339Z'

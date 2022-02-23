@@ -1,16 +1,11 @@
-import { useRef, useState } from "react";
+import { useRef, useState,useEffect } from "react";
 import { Dropdown } from "./Dropdown";
 import "./navbar.css";
+import { ResourceDropdown } from "./ResourceDropdown";
 import { Triangle } from "./Triangle";
 export const Navbar = () => {
-  const [show,setShow] = useState(false);
-  const handleClick = (e) => {
-    setShow(true);
-    setTimeout(()=>{
-      setShow(false)
-    },5000)
-  };
-  console.log(show);
+  const [showProductsDropdown, setshowProductsDropdown] = useState(false);
+  const [showResourcesDropdown, setshowResourcesDropdown] = useState(false);
   return (
     <header>
       <nav>
@@ -82,12 +77,26 @@ export const Navbar = () => {
                 </svg>
               </a>
               <div className='menu-items'>
-                <div className='products-link' onClick={handleClick}>
-                  <a className='links product-link' href='#'>
+                <div className='products-link'>
+                  <a
+                    className='links product-link'
+                    onClick={() => {
+                      setshowResourcesDropdown(false);
+                      setshowProductsDropdown((prev) => !prev);
+                    }}
+                    href='#'
+                  >
                     Products
                   </a>
                 </div>
-                <a className='links' href='/'>
+                <a
+                  className='links'
+                  href='#'
+                  onClick={() => {
+                    setshowProductsDropdown(false);
+                    setshowResourcesDropdown((prev) => !prev);
+                  }}
+                >
                   Resources
                 </a>
               </div>
@@ -171,10 +180,11 @@ export const Navbar = () => {
                 </div>
               </div>
             </div>
+            {showResourcesDropdown ? <ResourceDropdown /> : ""}
           </div>
-          <Triangle see={show}></Triangle>
+          {showProductsDropdown ? <Triangle /> : ""}
         </div>
-        <Dropdown see={show}></Dropdown>
+        {showProductsDropdown ? <Dropdown /> : ""}
       </nav>
     </header>
   );
