@@ -46,13 +46,15 @@ export const Planselector = () => {
   }
 
   function setValue(nam){
-    
+    setTp(nam)
   }
 
-  console.log(tp)
+  
+  function final(){
+    console.log(tp)
+  }
   return (
     <div>
-      <Navbar />
       <div id="maindiv">
         <div id="div1">
           <p>Plans for your Bajaj Pulsar 150 150CC</p>
@@ -85,6 +87,7 @@ export const Planselector = () => {
             acc1yr={acc1yr}
             setValue={setValue}
             removeval={removeval}
+            final={final}
           />
           <Plancards2
             prc3={d2prc3}
@@ -99,6 +102,7 @@ export const Planselector = () => {
             acc1yr={acc1yr}
             setValue={setValue}
             removeval={removeval}
+            final={final}
           />
         </div>
       </div>

@@ -27,8 +27,9 @@ export const Removebtn = ({ remove ,removeval}) => {
 };
 
 
-export const Buynow=()=>{
+export const Buynow=({final})=>{
     return (<button className="buybtn" onClick={()=>{
+      final()
     }}>
         Buy Now
     </button>)

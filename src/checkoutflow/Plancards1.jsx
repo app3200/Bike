@@ -1,4 +1,5 @@
 import { Addbtn, Removebtn, Buynow } from "./Buttons";
+import {Link} from "react-router-dom";
 
 export const Plancards1 = ({
   prc3,
@@ -11,7 +12,9 @@ export const Plancards1 = ({
   accmon,
   acc3yr,
   acc2yr,
-  acc1yr
+  acc1yr,
+  setValue,
+  final,
 }) => {
   return (
     <div className="plans">
@@ -33,9 +36,17 @@ export const Plancards1 = ({
         <div className="splans">
           <div className="inpdiv">
             <div className="drinp">
-              <input type="radio" className="rinp" value={prc3} id="3yr" name="plans" onInput={()=>{
-                acc3yr()
-              }}/>
+              <input
+                type="radio"
+                className="rinp"
+                value={prc3}
+                id="3yr"
+                name="plans"
+                onInput={(e) => {
+                  acc3yr();
+                  setValue(e.target.value);
+                }}
+              />
             </div>
             <div className="ldrinp">
               <label htmlFor="3yr">3 year plan</label>
@@ -47,9 +58,17 @@ export const Plancards1 = ({
           </div>
           <div className="inpdiv">
             <div className="drinp">
-              <input type="radio" className="rinp" id="2yr" value={prc2} name="plans" onInput={()=>{
-                acc2yr()
-              }}/>
+              <input
+                type="radio"
+                className="rinp"
+                id="2yr"
+                value={prc2}
+                name="plans"
+                onInput={(e) => {
+                  acc2yr();
+                  setValue(e.target.value);
+                }}
+              />
             </div>
             <div className="ldrinp">
               <label htmlFor="2yr">2 year plan</label>
@@ -61,9 +80,17 @@ export const Plancards1 = ({
           </div>
           <div className="inpdiv">
             <div className="drinp">
-              <input type="radio" className="rinp" value={prc1} id="1yr" name="plans" onInput={()=>{
-                acc1yr()
-              }}/>
+              <input
+                type="radio"
+                className="rinp"
+                value={prc1}
+                id="1yr"
+                name="plans"
+                onInput={(e) => {
+                  acc1yr();
+                  setValue(e.target.value);
+                }}
+              />
             </div>
             <div className="ldrinp">
               <label htmlFor="1yr">1 year plan</label>
@@ -89,7 +116,7 @@ export const Plancards1 = ({
         <div className="valplans">
           <div className="acci">
             <p>
-              Personal Accident Cover @ ₹{accmon}  .
+              Personal Accident Cover @ ₹{accmon} .
               <img
                 src="data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M7 13.9937C3.318 13.9937 0.333336 11.0091 0.333336 7.32707C0.333336 3.64507 3.318 0.6604 7 0.6604C10.682 0.6604 13.6667 3.64507 13.6667 7.32707C13.6667 11.0091 10.682 13.9937 7 13.9937ZM6.33334 6.6604V10.6604H7.66667V6.6604H6.33334ZM6.33334 3.99373V5.32707H7.66667V3.99373H6.33334Z' fill='%238788A0'/%3E %3C/svg%3E"
                 alt="i"
@@ -107,7 +134,9 @@ export const Plancards1 = ({
           )}
         </div>
         <div className="buydiv">
-          <Buynow />
+          <Link to="/checkout">
+            <Buynow final={final} />
+          </Link>
         </div>
       </div>
     </div>

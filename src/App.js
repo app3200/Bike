@@ -1,10 +1,17 @@
-import './App.css';
-import {Planselector} from "./components/planselector.jsx"
+import "./App.css";
+import { Planselector } from "./checkoutflow/planselector";
+import { Routes, Route } from "react-router-dom";
+import { Checkout } from "./checkoutflow/Checkout";
+import { Navbar } from "./checkoutflow/Navbar";
 
 function App() {
   return (
     <div className="App">
-     <Planselector/>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Planselector />} />
+        <Route path="/checkout" element={<Checkout />} />
+      </Routes>
     </div>
   );
 }
