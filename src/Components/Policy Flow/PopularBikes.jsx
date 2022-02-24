@@ -1,10 +1,13 @@
 import { useState } from "react"
 import { SelectedBike } from "./selectedbike"
+import {useDispatch} from "react-redux"
+import {Vehicleadd} from "../../ReduxStore/actions"
 
 
 export const PopularBikes = ({fun}) => {
     let [show,setShow]=useState(false)
     let [text,setText]=useState("");
+    const dispatch =useDispatch();
 
 
    function handler(e){
@@ -14,6 +17,7 @@ export const PopularBikes = ({fun}) => {
       setShow((prev)=>!prev)
       console.log(text)
       fun()
+      dispatch(Vehicleadd({vehicle_name:val}))
       
    }
     return (show===true)?<SelectedBike val={text}/>: (

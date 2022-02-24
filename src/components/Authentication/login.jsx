@@ -1,14 +1,16 @@
 import "./login.css"
 import { useState,useEffect } from "react"
+import { useDispatch } from "react-redux"
 import {Otp} from "./otp.jsx"
 import { Link,useNavigate } from "react-router-dom"
+import { Phoneadd } from "../../ReduxStore/actions"
 export const Login=()=>{
     const [text,setText]=useState("")
     const [no,setNo]=useState(0);
     const navigate=useNavigate();
     const [checkbox,setCheckbox]=useState(false)
     const [OTP,setOtp]=useState("")
-
+    const dispatch=useDispatch();
     let k;
     const getotp=(length)=>{
         const digits = '0123456789';
@@ -55,6 +57,7 @@ export const Login=()=>{
                 <div  >
                     <button disabled={no<=9?true:false} className= { `${no==10?"green":"gray"}`} onClick={()=>{
                         getotp(4)
+                        dispatch(Phoneadd(text))
                     }}>Get OTP</button></div>
                 {/* <div id="Otp"><Otp text={text}/></div> */}
               

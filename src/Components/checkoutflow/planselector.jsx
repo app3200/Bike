@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./planselector.css";
 import { Plancards1 } from "./Plancards1";
 import { Plancards2 } from "./Plancards2";
+import { useSelector } from "react-redux";
+
 
 export const Planselector = () => {
   const [d1prc3, setd13prc] = useState(2256);
@@ -52,6 +54,9 @@ export const Planselector = () => {
   function final(){
     console.log(tp)
   }
+
+  const Vname=useSelector((e) => e.vehicleD);
+
   return (
     <div>
       <div id="maindiv">
