@@ -1,0 +1,29 @@
+#logos>div>div>div>img{
+    width: 50px;
+    margin: 15px;
+}
+
+#logos>div>div{
+        display:flex;
+     width:40%;
+     margin:auto
+}
+#logos{
+    margin-top: 30px;
+}
+
+#btnc{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 45%;
+    /* border: 2px solid red; */
+}
+#btnc>button{
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 15px 30px;
+
+}
