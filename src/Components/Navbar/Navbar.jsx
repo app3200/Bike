@@ -155,7 +155,7 @@ export const Navbar = () => {
                   </svg>
                 </div>
                 <p className='nav-p'>Claim, edit, renew &amp; more</p>
-                <a href='#' className='btn-policies'>
+                <a href={isLoggedin?"#":"/login"} className='btn-policies'>
                   {isLoggedin ? (
                     "My policies"
                   ) : (
