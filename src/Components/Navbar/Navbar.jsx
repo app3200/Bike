@@ -1,11 +1,14 @@
 import { useRef, useState, useEffect } from "react";
 import { Dropdown } from "./Dropdown";
 import "./navbar.css";
+import { ProfileDropdown } from "./ProfileDropdown";
 import { ResourceDropdown } from "./ResourceDropdown";
 import { Triangle } from "./Triangle";
 export const Navbar = () => {
   const [showProductsDropdown, setshowProductsDropdown] = useState(false);
   const [showResourcesDropdown, setshowResourcesDropdown] = useState(false);
+  const [showLoginDropDown, setshowLoginDropdown] = useState(false);
+  const [isLoggedin, setLogin] = useState(true);
   return (
     <header>
       <nav>
@@ -82,6 +85,7 @@ export const Navbar = () => {
                     className='links product-link'
                     onClick={() => {
                       setshowResourcesDropdown(false);
+                      setshowLoginDropdown(false);
                       setshowProductsDropdown((prev) => !prev);
                     }}
                     href='#'
@@ -94,6 +98,7 @@ export const Navbar = () => {
                   href='#'
                   onClick={() => {
                     setshowProductsDropdown(false);
+                    setshowLoginDropdown(false);
                     setshowResourcesDropdown((prev) => !prev);
                   }}
                 >
@@ -151,105 +156,63 @@ export const Navbar = () => {
                 </div>
                 <p className='nav-p'>Claim, edit, renew &amp; more</p>
                 <a href='#' className='btn-policies'>
-                  My policies
+                  {isLoggedin ? (
+                    "My policies"
+                  ) : (
+                    <>
+                      Login
+                      <img
+                        src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMyAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuNjI0OTkgNi40NzQ2N0w5LjA5OTk5IDMuOTk5NjdMOS44MDY5OSA0LjcwNjY3TDYuNjI0OTkgNy44ODg2N0wzLjQ0Mjk5IDQuNzA2NjdMNC4xNDk5OSAzLjk5OTY3TDYuNjI0OTkgNi40NzQ2N1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo='
+                        alt='v'
+                        className='sc-hXRMBi bprwOV'
+                      />
+                    </>
+                  )}
                 </a>
               </div>
               <a className='link-help'>Help</a>
-              <div className='profile-div'>
-                <div className='profile-svg-div'>
-                  <svg
-                    width='32'
-                    height='32'
-                    viewBox='0 0 32 32'
-                    fill='none'
-                    xmlns='http://www.w3.org/2000/svg'
+              {isLoggedin ? (
+                <div className='profile-div'>
+                  <div
+                    className='profile-svg-div'
+                    onClick={() => {
+                      setshowProductsDropdown(false);
+                      setshowResourcesDropdown(false);
+                      setshowLoginDropdown(!showLoginDropDown);
+                    }}
                   >
-                    <path
-                      d='M16.625 30.6668C24.7252 30.6668 31.2917 24.1003 31.2917 16.0002C31.2917 7.89999 24.7252 1.3335 16.625 1.3335C8.52486 1.3335 1.95837 7.89999 1.95837 16.0002C1.95837 24.1003 8.52486 30.6668 16.625 30.6668Z'
-                      fill='#F6F7FB'
-                    ></path>
-                    <path
-                      d='M20.6461 11.7554C20.6461 13.9894 18.859 16.1116 16.6251 16.1116C14.3911 16.1116 12.604 13.9894 12.604 11.7554C12.604 9.52152 14.3911 7.73438 16.6251 7.73438C18.859 7.73438 20.6461 9.52152 20.6461 11.7554Z'
-                      fill='#9364ED'
-                    ></path>
-                    <path
-                      d='M23.2046 22.5781C23.3163 23.1365 22.9812 23.695 22.311 23.9184C21.194 24.2535 18.9601 24.7003 16.6145 24.7003C14.2689 24.7003 12.0349 24.1418 10.918 23.8067C10.3595 23.695 10.0244 23.1365 10.0244 22.4664C10.4712 19.3389 12.5173 17.6064 16.6145 17.6064C20.6094 17.6064 22.7578 19.4506 23.2046 22.5781Z'
-                      fill='#9364ED'
-                    ></path>
-                  </svg>
+                    <svg
+                      width='32'
+                      height='32'
+                      viewBox='0 0 32 32'
+                      fill='none'
+                      xmlns='http://www.w3.org/2000/svg'
+                    >
+                      <path
+                        d='M16.625 30.6668C24.7252 30.6668 31.2917 24.1003 31.2917 16.0002C31.2917 7.89999 24.7252 1.3335 16.625 1.3335C8.52486 1.3335 1.95837 7.89999 1.95837 16.0002C1.95837 24.1003 8.52486 30.6668 16.625 30.6668Z'
+                        fill='#F6F7FB'
+                      ></path>
+                      <path
+                        d='M20.6461 11.7554C20.6461 13.9894 18.859 16.1116 16.6251 16.1116C14.3911 16.1116 12.604 13.9894 12.604 11.7554C12.604 9.52152 14.3911 7.73438 16.6251 7.73438C18.859 7.73438 20.6461 9.52152 20.6461 11.7554Z'
+                        fill='#9364ED'
+                      ></path>
+                      <path
+                        d='M23.2046 22.5781C23.3163 23.1365 22.9812 23.695 22.311 23.9184C21.194 24.2535 18.9601 24.7003 16.6145 24.7003C14.2689 24.7003 12.0349 24.1418 10.918 23.8067C10.3595 23.695 10.0244 23.1365 10.0244 22.4664C10.4712 19.3389 12.5173 17.6064 16.6145 17.6064C20.6094 17.6064 22.7578 19.4506 23.2046 22.5781Z'
+                        fill='#9364ED'
+                      ></path>
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                ""
+              )}
             </div>
             {showResourcesDropdown ? <ResourceDropdown /> : ""}
           </div>
           {showProductsDropdown ? <Triangle /> : ""}
         </div>
         {showProductsDropdown ? <Dropdown /> : ""}
-        <div className='profile-dropdown'>
-          <div className='profile-wrapper'>
-            <div className='profile-container'>
-              <div className='profile-dropdown-container'>
-                <div className='profile-name-icon-div'>
-                  <div className='profile-name-icon-div-div'>
-                    <div className='profile-icon-div'>
-                      <div className='profile-icon'>
-                        <svg
-                          fill='none'
-                          height='46'
-                          viewBox='0 0 46 46'
-                          width='46'
-                          xmlns='http://www.w3.org/2000/svg'
-                        >
-                          <path
-                            d='m22.9246 44.0833c11.6058 0 21.0142-9.4393 21.0142-21.0833s-9.4084-21.08334-21.0142-21.08334-21.0142 9.43934-21.0142 21.08334 9.4084 21.0833 21.0142 21.0833z'
-                            fill='#f1f3f8'
-                          ></path>
-                          <g fill='#9364ed'>
-                            <path d='m28.686 16.8985c0 3.2113-2.5606 6.262-5.7613 6.262-3.2008 0-5.7614-3.0507-5.7614-6.262s2.5606-5.7803 5.7614-5.7803c3.2007 0 5.7613 2.569 5.7613 5.7803z'></path>
-                            <path d='m32.3517 32.4556c.16.8028-.3201 1.6056-1.2803 1.9267-1.6004.4817-4.8012 1.124-8.1619 1.124-3.3608 0-6.5615-.8028-8.1619-1.2845-.8002-.1606-1.2803-.9634-1.2803-1.9268.6401-4.4958 3.5718-6.9861 9.4422-6.9861 5.7238 0 8.802 2.6509 9.4422 7.1467z'></path>
-                          </g>
-                        </svg>
-                      </div>
-                    <div className='dgObov'>
-                      <p className='ecadKN'>Durgesh rai</p>
-                      <p className='jXCDif'>8299027233</p>
-                    </div>
-                    </div>
-                  </div>
-                </div>
-                <div className='lines-div'></div>
-                <div className='profile-extras'>
-                  <div style={{ textDecoration: "none", cursor: "pointer" }}>
-                    <div className='my-policies-div'>
-                      <div className='mypolicies'>
-                        <img
-                          height='20px'
-                          width='20px'
-                          src='https://myaccount.ackoassets.com/static/images/header-icons/my-policy-v2.svg'
-                          className='fpCRcM'
-                        ></img>
-                        <p className='eHEzhk'>My policies</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div style={{ textDecoration: "none", cursor: "pointer" }}>
-                    <div className='my-policies-div'>
-                      <div className='mypolicies'>
-                        <img
-                          height='20px'
-                          width='20px'
-                          src='https://myaccount.ackoassets.com/static/images/header-icons/my-profile-v2.svg'
-                          className='fpCRcM'
-                        ></img>
-                        <p className='eHEzhk'>My profile</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {showLoginDropDown ? <ProfileDropdown /> : ""}
       </nav>
     </header>
   );
