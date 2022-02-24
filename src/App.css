@@ -12,6 +12,7 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 .ackobikeselect{
   display: flex;
   flex-direction: column;
@@ -41,6 +42,82 @@
  margin-top: 2em;
 }
 
+
+.ackobikeselect{
+  display: flex;
+  flex-direction: column;
+}
+.ackologotop{
+  margin-top: 1%;
+  /* float: left; */
+}
+.inputandbutton{
+  display: flex;
+
+}
+
+.inputboxbike{
+  border: 0.5px solid lightgray;
+  border-radius: 2%;
+  height: 30em;
+
+
+  
+}
+#boughtin{
+  display: flex;
+  justify-content: space-between;
+  min-width: 30%;
+  font-size: small;
+}
+#both{
+  border: 0.5px solid lightgray;
+  border-radius: 2%;
+  
+
+  /* padding: 2em; */
+}
+#both {
+  color: rgb(65,79,96)
+}
+.inline{
+  display: inline-block;
+}
+
+#bikenumber_edit button{
+  font-weight: 800;
+}
+.inputboxbike{
+  display: flex;
+  flex-direction: column;
+    padding: 2em;
+
+
+}
+.bikeinput{
+ display: grid;
+ grid-template-columns: 50% 25%;
+ grid-gap: 5%;
+ justify-content: center;
+ margin-top: 2em;
+
+}
+
+.whypoints{
+  display: grid;
+  grid-template-columns: 20% 60%;
+  grid-gap: 0.5em;
+
+}
+#reasonfor{
+  text-align: left;
+  
+}
+
+
+#reasonfor p{
+  font-size: small;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -51,14 +128,23 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
 *{
   margin: 0;
   padding: 0;
 }
 .whyackotitle h2{
-  
+
+ padding-left: 0;
+ margin-left: 0;
   text-align: left;
 }
+
+
+
+  
+
+
 
 .App-link {
   color: #61dafb;
@@ -71,4 +157,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+#yearsbox{
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+#yearsbox button{
+  background-color: lightgray;
+  color: blue;
+  border: none;
+  
+}
+#logo_and_boughtin{
+  display: flex;
+  font-size: small;
 }

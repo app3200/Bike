@@ -7,10 +7,7 @@ import {Login} from "./Components/Authentication/login"
 import {Routes,Route} from "react-router-dom"
 import { Otp } from "./Components/Authentication/otp";
 import {Myaccount} from "./Components/Authentication/myaccount"
-import { Planselector} from "./Components/checkoutflow/planselector"
-import {Navbar2} from "./Components/checkoutflow/Navbar2"
-import { Checkout } from "./Components/checkoutflow/Checkout";
-
+import {SelectBike} from "./Components/Policy Flow/SelectBike"
 
 function App() {
   return (
@@ -23,8 +20,7 @@ function App() {
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/otp" element={<Otp/>}></Route>
        <Route path="/myaccount" element={<Myaccount/>}></Route>
-       <Route path="/planselector" element={<><Navbar2/><Planselector/></>}/>
-       <Route path="/checkout" element={<><Navbar2/><Checkout/></>}/>
+       <Route path="/selectbike" element={<SelectBike/>}></Route>
      </Routes>
     </div>
   );

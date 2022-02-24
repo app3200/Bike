@@ -1,0 +1,475 @@
+#_next{
+    width: 100%;
+    height: 100%;
+  }
+  .ackologo{
+    width: 100%;
+      border-bottom: 1px solid rgb(244, 245, 247);
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+  }
+  body{
+    font-family: "system-ui","Helvetica Neue",Helvetica,Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      -webkit-scroll-behavior: smooth;
+      -moz-scroll-behavior: smooth;
+      -ms-scroll-behavior: smooth;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      display: block;
+  }
+  .flexlogo{
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    max-width: 1170px;
+    height: 70px;
+    width: 100%;
+  }
+  @media (max-width: 1220px) and (min-width: 769px) {
+    .flexlogo{
+        padding: 0px 24px;
+  }
+}
+
+
+.ackologoimage{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+}
+
+.maininputbox{
+    display: grid;
+    grid-template-columns: 700px 400px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    gap: 30px;
+    min-width: 1240px;
+    max-width: 1380px;
+    margin: auto;
+    padding-top: 24px;
+    background-color: rgb(255, 255, 255)
+}
+.innermaininputbox{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    padding: 10%;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    min-height: 500px;
+    max-height: 600px;
+}
+.bikenumberedit{
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    color: rgb(0, 0, 0);
+}
+.bikenumberedit >span{
+    color: rgb(0, 145, 221);
+    font-weight: bold;
+    margin: 0px 0px 0px 2px;
+    cursor: pointer;
+}
+.selectyourbike{
+    font-weight: 800;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: rgb(65, 74, 83);
+    margin: 10px auto;
+    
+}
+.inputboxstart{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    width: 90%;
+    position: relative;
+}
+.inputboxstart >*{
+    flex-shrink: 0;
+}
+.onestepinside{
+    position: relative;
+}
+.secondstepinside{
+    position: relative;
+}
+.thirdstepinside{
+    position: relative;
+}
+.thirdstepinside > input{
+    border: 1px solid rgb(200, 208, 219);
+    background-color: transparent;
+    font-size: 0.875rem;
+    color: rgb(65, 74, 83);
+    padding: 8px 50px 8px 12px;
+    height: 60px;
+}
+.thirdstepinside:focus-within::after, .thirdstepinside > input:valid::after {
+    top: -10px;
+    left: 5px;
+    font-size: 12px;
+    color: rgb(94, 39, 201);
+}
+.inputboxreached{
+    height: 50px;
+    width: 100%;
+    border-radius: 8px;
+    color: rgb(92, 93, 102);
+    font-size: 0.75rem;
+    background-color: rgb(243, 243, 247);
+    border: 1px solid rgb(243, 243, 247);
+    padding-left: 45px;
+    appearance: none;
+}
+.spanit{
+    position: absolute;
+    left: 17px;
+    top: 17px;
+}
+.thirdstepinside::after{
+    content: "Search bike model";
+    font-weight: 500;
+    padding: 4px 8px;
+    background: rgb(255, 255, 255);
+    color: rgb(65, 74, 83);
+    position: absolute;
+    top: 17px;
+    left: 10px;
+    font-size: 16px;
+    margin: auto;
+    transition: all 0.2s ease 0s;
+    pointer-events: none;
+}
+.searchimage{
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: auto;
+}
+.Bikeboughinouterdiv{
+    position: relative;
+    width: 440px;
+    margin: 0px auto;
+}
+.bb1{
+    margin-top: 13px;
+    padding: 0px;
+    cursor: pointer;
+}
+.bb2{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.bbpic{
+    width: 15px;
+    height: auto;
+    float: left;
+}
+.bikeboughtintext{
+    margin: 0px 0px 0px 8px;
+    font-size: 0.75rem;
+    color: rgb(85, 90, 104);
+    font-weight: 500;
+    float: left;
+}
+.yeardiouter{
+    flex: 1 1 0%;
+}
+.yeardiiner{
+    float: right;
+    height: 28px;
+    border-radius: 6px;
+    background-color: rgb(244, 245, 247);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px 10px;
+    border: 1px solid transparent;
+}
+.yeartextdiv{
+    font-size: 0.75rem;
+    color: rgb(124, 71, 225);
+    font-weight: 500;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.downarrow{
+    width: 16px;
+    margin-left: 6px;
+}
+.cps{
+    position: relative;
+    width: 440px;
+    margin: 0px auto;
+}
+.seconddivouter{
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 10px;
+    height: max-content;
+}
+.seconddivinner{
+    padding: 20px;
+}
+.whyacko{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(65, 74, 83);
+    margin: 15px 0px;
+}
+.outerwrap{
+    display: grid;
+    grid-template-columns: 35px 1fr;
+    gap: 20px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.smalllogo{
+    height: 45px;
+    width: 45px;
+    object-fit: scale-down;
+    
+}
+.textdiv1{
+    text-align: left;
+}
+.textdiv1 > span:first-child {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(65, 74, 83);
+}
+.textdiv1 > span:last-child {
+    display: block;
+    font-size: 12px;
+    color: rgb(65, 74, 83);
+    margin: 5px 0px 0px;
+}
+.popularbikeouter{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    width: 90%;
+    position: relative;
+}
+.popinner{
+    position: relative;
+}
+.popinner2{
+    position: relative;
+}
+.popularbikestext{
+    font-weight: 600;
+    color: rgb(65, 74, 83);
+    font-size: 0.875rem;
+    margin: 20px 0px 8px;
+    text-align: left;
+}
+.bikename{
+    padding: 14px 0px;
+    font-size: 0.875rem;
+    color: rgb(65, 74, 83);
+    border-bottom: 1px solid rgb(220, 220, 224);
+    cursor: pointer;
+    text-align: left;
+}
+.yearsdivouter1{
+    top: 50px;
+    right: 10px;
+    width: 400px;
+    max-height: 360px;
+}
+.yeardivouter2{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(173 173 173) 0px 0px 19px -3px;
+    padding: 20px;
+    border-radius: 9px;
+    overflow: hidden auto;
+    z-index: 1;
+}
+.gridyears{
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.eachgridyear{
+    width: 100%;
+    cursor: pointer;
+    height: 36px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(243, 247, 255);
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: rgb(85, 90, 104);
+    text-align: center;
+}
+.policystatus{
+    top: 50px;
+    right: 10px;
+    max-height: 360px;
+    width: 280px;
+    height: max-content;
+}
+.idYhLj {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px){
+
+    .idYhLj {
+        flex-direction: row;
+        flex-direction: column; 
+        -webkit-box-pack: initial;
+        justify-content: initial;
+        margin-left: -8px;
+    }
+}
+.innerpolicy{
+    width: 100%;
+    display: flex;
+}
+.innerme{
+    margin-right: -8px;
+    margin-left: -8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-flex: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex: 0 1 auto !important;
+}
+.policybutton1{
+    margin-bottom: 16px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    color: rgb(85, 90, 104);
+}
+.policybutton2{
+    width: 100%;
+    padding: 0.75em calc(16px + 1em);
+    border-radius: 6px;
+    border: 1px solid rgb(243, 247, 255);
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgb(21, 22, 25);
+    background-color: rgb(243, 247, 255);
+    cursor: pointer;
+    position: relative;
+}
+.policytext{
+    width: 100%;
+    white-space: pre-wrap;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.policystatus12{
+    width: 50%;
+    /* border: 1px solid red; */
+    z-index: 1;
+    box-shadow: 10px 10px lightgray;
+    padding: 1em;
+    
+  }
+.childpolicy{
+    background-color: rgb(243,247,255);
+    width: 100%;
+}
+.herebike{
+    font-weight: 800;
+    font-size: 26px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: rgb(65, 74, 83);
+    margin: 10px auto;
+}
+.verifypaln{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgb(65, 74, 83);
+    width: 75%;
+    margin: 0px auto;
+}
+.bikepicdiv{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    width: 90%;
+    position: relative;
+}
+.eGAmrw {
+    width: 172px;
+    display: block;
+    height: auto;
+    margin: 0px auto;
+}
+.bikeisselected{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: rgb(65, 74, 83);
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: max-content 25px;
+    gap: 5px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.editicon{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    margin: 0px 0px 0px 5px;
+}

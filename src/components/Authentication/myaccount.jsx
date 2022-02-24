@@ -9,11 +9,14 @@ export const Myaccount = () => {
     <div id="myaccount" className="myaccount">
       <div className="accountnav">
         <div className="navimd">
+          <Link to="/">
         <img 
           src="https://th.bing.com/th/id/OIP.bUQCSzp8qVRj750U4IeOoQHaCY?w=328&h=112&c=7&r=0&o=5&dpr=1.25&pid=1.7"
           width="82px"
           height="26px"
+          style={{cursor:"pointer"}}
         />
+        </Link>
         </div>
          
         <div className="help">
