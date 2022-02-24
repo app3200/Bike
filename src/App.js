@@ -1,12 +1,16 @@
 import logo from "./logo.svg";
 // import "./App.css";
 // import { SelectBike } from "./Components/Policy Flow/SelectBike";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Hero } from "./components/HeroSection/Hero";
-import {Login} from "./components/Authentication/login"
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Hero } from "./Components/HeroSection/Hero";
+import {Login} from "./Components/Authentication/login"
 import {Routes,Route} from "react-router-dom"
-import { Otp } from "./components/Authentication/otp";
-import {Myaccount} from "./components/Authentication/myaccount"
+import { Otp } from "./Components/Authentication/otp";
+import {Myaccount} from "./Components/Authentication/myaccount"
+import { Planselector} from "./Components/checkoutflow/planselector"
+import {Navbar2} from "./Components/checkoutflow/Navbar2"
+import { Checkout } from "./Components/checkoutflow/Checkout";
+
 
 function App() {
   return (
@@ -19,6 +23,8 @@ function App() {
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/otp" element={<Otp/>}></Route>
        <Route path="/myaccount" element={<Myaccount/>}></Route>
+       <Route path="/planselector" element={<><Navbar2/><Planselector/></>}/>
+       <Route path="/checkout" element={<><Navbar2/><Checkout/></>}/>
      </Routes>
     </div>
   );

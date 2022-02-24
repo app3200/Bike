@@ -1,6 +1,6 @@
 import "./Navbar.css";
 
-export const Navbar = () => {
+export const Navbar2 = () => {
   return (
     <div className="navbar">
       <div className="ndiv">

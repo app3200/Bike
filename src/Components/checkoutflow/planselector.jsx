@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./planselector.css";
-import { Navbar } from "./Navbar";
 import { Plancards1 } from "./Plancards1";
 import { Plancards2 } from "./Plancards2";
 
