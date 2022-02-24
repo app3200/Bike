@@ -11,6 +11,7 @@ import {SelectBike} from "./Components/Policy Flow/SelectBike"
 import {Navbar2} from "./Components/checkoutflow/Navbar2"
 import {Planselector} from "./Components/checkoutflow/planselector"
 import {Checkout} from "./Components/checkoutflow/Checkout"
+import { Home } from "./Components/Home/Home";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       {/* <Navbar></Navbar>
      <Hero></Hero>  */}
      <Routes>
-       <Route path="/" element={<><Navbar/> < Hero/></>}></Route>
+       <Route path="/" element={<Home></Home>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/otp" element={<Otp/>}></Route>
        <Route path="/myaccount" element={<Myaccount/>}></Route>
