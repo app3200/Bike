@@ -10,8 +10,18 @@ export const Initialpage = () => {
     const [popbike,setPopbike]=useState(false)
     const [bb,setBb]=useState(false);
     const [hideinput,setHideinput]=useState(false);
+    const [year,setYear]=useState(2009)
+    const [ policydiv, setPolicydiv] = useState("Policy not Expired")
     function controlhideinput(){
         setHideinput((prev)=>!prev)
+    }
+    function setyearselected(val){
+        setYear(val)
+        setBike((prev)=>!prev)
+    }
+    function setpolicyselection(val){
+        setPolicydiv(val)
+        setPolicy((prev)=>!prev)
     }
     return(
     <div>
@@ -22,15 +32,18 @@ export const Initialpage = () => {
                     <div className="onestepinside">
                     <div className="secondstepinside">
                             <div className="thirdstepinside">
-                            <input onClick={()=> {
-                                setPopbike((prev)=>!prev)
-                                setBb(!popbike)
-                            }} type="text" placeholder="" className="inputboxreached"/>
+                            <input 
+                                onClick={(e)=> {
+                                    setPopbike((prev)=>!prev)
+                                    setBb(!popbike)
+                                }} 
+                              
+                                type="text" placeholder="" className="inputboxreached"/>
                             <span className="spanit">
                                 {/* -----SVG PENDING---- */}
                             </span>
                             </div>
-                            <img src="data:image/svg+xml,%3Csvg width='41' height='41' viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Crect width='41' height='41' rx='10' fill='%2337C87E'/%3E %3Cpath d='M20.3333 24.6667C23.2789 24.6667 25.6667 22.2789 25.6667 19.3333C25.6667 16.3878 23.2789 14 20.3333 14C17.3878 14 15 16.3878 15 19.3333C15 22.2789 17.3878 24.6667 20.3333 24.6667Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3Cpath d='M27 26.0001L24.1 23.1001' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E" className="searchimage"></img>
+                            <img  src="data:image/svg+xml,%3Csvg width='41' height='41' viewBox='0 0 41 41' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Crect width='41' height='41' rx='10' fill='%2337C87E'/%3E %3Cpath d='M20.3333 24.6667C23.2789 24.6667 25.6667 22.2789 25.6667 19.3333C25.6667 16.3878 23.2789 14 20.3333 14C17.3878 14 15 16.3878 15 19.3333C15 22.2789 17.3878 24.6667 20.3333 24.6667Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3Cpath d='M27 26.0001L24.1 23.1001' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E" className="searchimage"></img>
                         </div>
                         </div>
                     </div>:null}
@@ -50,10 +63,10 @@ export const Initialpage = () => {
                                   setBike((prev)=>!prev)
                                   setPolicy(false)
                                 //   console.log(bike,policy)
-                                }} className="yeartextdiv" >2009</div>
+                                }} className="yeartextdiv" >{year}</div>
                                 <img src="data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M4 6L8 10L12 6' stroke='%237C47E1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E" className="downarrow"/>
                             </div>
-                           {(bike===true)?<Years/>:null}
+                           {(bike===true)?<Years yearset={setyearselected}/>:null}
                         </div>
                         
                         </div>
@@ -72,10 +85,10 @@ export const Initialpage = () => {
                                   setBike(false)
                                   console.log(bike,policy)
                                 }}  className="yeardiiner">
-                                <div className="yeartextdiv">Expired more than 90 days...</div>
+                                <div className="yeartextdiv">{policydiv}</div>
                                 <img src="data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath d='M4 6L8 10L12 6' stroke='%237C47E1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E %3C/svg%3E" className="downarrow"/>
                             </div>
-                            {(policy===true)?<PolicyStatus/>:null}
+                            {(policy===true)?<PolicyStatus policyset={setpolicyselection}/>:null}
                         </div>
                         </div>
                     </div>
