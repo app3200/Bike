@@ -12,8 +12,36 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-<<<<<<< Updated upstream
-=======
+
+.ackobikeselect{
+  display: flex;
+  flex-direction: column;
+}
+.ackologotop{
+  margin-top: 1%;
+  /* float: left; */
+}
+.inputboxbike{
+  border: 0.5px solid lightgray;
+  border-radius: 2%;
+  height: 30em
+  
+}
+.whyacko{
+  border: 0.5px solid lightgray;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 2em; */
+}
+.bikeinput{
+ display: grid;
+ grid-template-columns: 50% 30%;
+ grid-gap: 5%;
+ justify-content: center;
+ margin-top: 2em;
+}
+
 
 .ackobikeselect{
   display: flex;
@@ -85,7 +113,7 @@
   text-align: left;
   
 }
->>>>>>> Stashed changes
+
 
 #reasonfor p{
   font-size: small;
@@ -100,18 +128,22 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-<<<<<<< Updated upstream
-=======
+
 *{
   margin: 0;
   padding: 0;
 }
 .whyackotitle h2{
+
  padding-left: 0;
  margin-left: 0;
   text-align: left;
 }
->>>>>>> Stashed changes
+
+
+
+  
+
 
 
 .App-link {

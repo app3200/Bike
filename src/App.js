@@ -1,18 +1,15 @@
-
-import { Route, Router, Routes } from 'react-router-dom';
-import './App.css';
-import { MyProfile } from './Components/Login/MyProfile';
-import { SelectBike } from './Components/Policy Flow/SelectBike';
-import { SelectedBike } from './Components/Policy Flow/selectedbike';
+import logo from "./logo.svg";
+import "./App.css";
+import { SelectBike } from "./Components/Policy Flow/SelectBike";
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Hero } from "./Components/HeroSection/Hero";
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-        <Route path='/' element={<MyProfile/>}></Route>
-    
-      </Routes>
-     
+    <div className='App'>
+      {/* <SelectBike/> */}
+      {/* <Navbar></Navbar>
+     <Hero></Hero> */}
     </div>
   );
 }
