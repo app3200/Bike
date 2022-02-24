@@ -1,5 +1,5 @@
-body{
-    font-family: "system-ui","Helvetica Neue",Helvetica,Arial, sans-serif;
+body {
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 #navbar {
@@ -33,136 +33,234 @@ body{
 }
 #div1 > p {
   font-size: 30px;
-  font-weight:550;
-  line-height:6px;
+  font-weight: 550;
+  line-height: 6px;
 }
-#vinfo{
-    /* border:1px solid green; */
-    width:70%;
-    height:20px;
-    margin:auto;
-    display:flex;
-    gap:10px;
+#vinfo {
+  /* border:1px solid green; */
+  width: 70%;
+  height: 20px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
 }
-#vinfo>a{
-    font-size: 12px;
-    margin-top:5px;
-    font-weight:650;
-    text-decoration: none;
+#vinfo > a {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 650;
+  text-decoration: none;
 }
-.pointer{
-    font-size:25px;
-    line-height:7px;
-    font-weight: lighter;
+.pointer {
+  font-size: 25px;
+  line-height: 7px;
+  font-weight: lighter;
 }
-.vdet{
-    /* border:1px solid purple; */
-    width:30%;
+.vdet {
+  /* border:1px solid purple; */
+  width: 30%;
 }
-.vdet>p{
-    line-height: 0;
-    font-size:12px;
-    font-weight:650;
-    vertical-align: top;
+.vdet > p {
+  line-height: 0;
+  font-size: 12px;
+  font-weight: 650;
+  vertical-align: top;
 }
-#div2{
-    /* border:1px solid black; */
-    width:90%;
-    display:flex;
-    margin:auto;
-    margin-top:40px;
-    gap:50px;
+#div2 {
+  /* border:1px solid black; */
+  width: 90%;
+  display: flex;
+  margin: auto;
+  margin-top: 40px;
+  gap: 50px;
 }
-.plans{
-    border:1px solid rgb(226, 220, 220);
-    border-radius:10px;
-    width:50%;
-    height:550px;
-    margin-bottom:40px;
+.plans {
+  border: 1px solid rgb(226, 220, 220);
+  border-radius: 10px;
+  width: 50%;
+  height: 530px;
+  margin-bottom: 40px;
 }
-.cplans{
-    border:1px solid green;
-    margin:auto;
-    width:90%;
-    height:100%;
+.cplans {
+  /* border: 1px solid green; */
+  margin: auto;
+  width: 85%;
+  height: 100%;
 }
-.tplans{
-    /* border:1px solid red; */
-    width:100%;
-    margin:auto;
-    margin-top: 8%;
-    height:15%;
-    display:flex;
+.tplans {
+  /* border:1px solid red; */
+  width: 100%;
+  margin: auto;
+  margin-top: 8%;
+  height: 15%;
+  display: flex;
 }
-.mtitle{
-    /* border:1px solid blue; */
-    width:75%;
-    text-align: left;
+.mtitle {
+  /* border:1px solid blue; */
+  width: 75%;
+  text-align: left;
 }
-.mtitle>h2{
-    line-height:0px;
+.mtitle > h2 {
+  line-height: 0px;
 }
-.mtitle>h5{
-    font-weight: 550;
-    color:rgb(162,151,153);
+.mtitle > h5 {
+  font-weight: 550;
+  color: rgb(112,127,140);
 }
-.mimg{
-    /* border:1px solid blue; */
-    width:18%;
-    margin-left:5%;
+.mimg {
+  /* border:1px solid blue; */
+  width: 18%;
+  margin-left: 7%;
 }
-.mimg>img{
-    margin-top:15%;
+.mimg > img {
+  margin-top: 15%;
 }
-.splans{
-    border:1px solid red;
-    width:100%;
-    height:30%;
-    margin:auto;
-    margin-top:15px;
+.splans {
+  /* border:1px solid red; */
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  margin-top: 8%;
 }
-.inpdiv{
-    width:100%;
-    height:30%;
-    margin:auto;
-    margin-top:1%;
-    display:flex;
+.inpdiv {
+  width: 100%;
+  height: 30%;
+  margin: auto;
+  margin-top: 1%;
+  display: flex;
+  border-bottom: 1px solid rgb(240, 232, 232);
 }
-.drinp{
-    margin-top:2%
+.drinp {
+  margin-top: 2%;
 }
-.tprice{
-    border:1px solid red;
-    width:35%;
-    height:60%;
-    margin-left:40%;
-    margin-top:2.2%;
-    font-size: 16px;
-    font-weight: bold;
-}
-.tprice>p{
-    font-size: 10px;
-    font-weight:bold;
-    line-height:0px;
-    vertical-align: top;
-}
-.ldrinp{
-    margin-top:2%;
-    margin-left:1%;
-}
-.ldrinp>label{
-    font-size: 14px;
-    font-weight:500;
-}
-.rinp{
-    height:20px;
-    width:20px;
+.tprice {
+  /* border:1px solid red; */
+  width: 35%;
+  height: 60%;
+  margin-left: 40%;
+  margin-top: 2.2%;
+  text-align: right;
 }
 
-.valplans{
-    border:1px solid red;
-    width:100%;
-    margin:auto;
+.tprice > p {
+  display: inline;
+}
+.p1 {
+  font-size: 16px;
+  font-weight: bold;
+}
+.p2 {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 0;
+}
+.ldrinp {
+  margin-top: 2%;
+  margin-left: 1%;
+}
+.ldrinp > label {
+  font-size: 14px;
+  font-weight: 500;
+}
+.rinp {
+  height: 20px;
+  width: 20px;
+}
+
+.valplans {
+  border-bottom: 1px solid rgb(240, 234, 234);
+  width: 100%;
+  margin: auto;
+  height: 12%;
+  margin-top: 10px;
+}
+
+.insurev {
+  width: 100%;
+  height: 40%;
+  display: flex;
+}
+.insurev > p:nth-child(1) {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 0;
+}
+.insurev > p:nth-child(2) {
+  font-size: 14px;
+  color: grey;
+  font-weight: bold;
+  line-height: 0;
+  margin-left: 2%;
+}
+.insuret {
+  width: 100%;
+  height: 40%;
+  text-align: left;
+}
+.insuret {
+  font-size: 10px;
+  color: grey;
+  line-height: 0;
+}
+.add {
+  width: 12%;
+  height: 32%;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid rgb(0, 152, 226);
+  color: rgb(0, 152, 226);
+  margin-top: 3%;
+  float: right;
+  font-size: 10px;
+}
+.remove {
+  width: 15%;
+  height: 35%;
+  border-radius: 5px;
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  margin-top: 3%;
+  float: right;
+  text-align: center;
+  font-size: 12px;
+}
+.acci {
+  height: 70%;
+  width: 70%;
+  float: left;
+}
+.acci > p:nth-child(1) {
+  vertical-align: top;
+  line-height: 0;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+.acci > p:nth-child(2) {
+  font-size: 10px;
+  color: rgb(112,127,140);
+  font-weight: 550;
+  text-align: left;
+  line-height:1.2 ;
+}
+
+.buydiv{
+    text-align: left;
+    margin-top:3%;
     height:15%;
-    margin-top:10px;
+    width:100%;
+}
+.buybtn{
+    text-align: center;
+    font-size: 10px;
+    font-weight:bold;
+    background-color:rgb(55,200,126);
+    color:white;
+    height:55%;
+    width:30%;
+    border:none;
+    border-radius:6px;
+}
+#tval{
+    color:rgb(124,71,225);
 }
