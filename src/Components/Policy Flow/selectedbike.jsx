@@ -1,10 +1,7 @@
-import { useParams } from "react-router-dom"
+import { useParams,Link } from "react-router-dom"
 
 
 export const SelectedBike= ({val}) => {
-    const {id} = useParams()
-    // console.log(id)
- 
     return (
         <div>
             <div className="herebike">Here’s your bike</div>
@@ -16,8 +13,9 @@ export const SelectedBike= ({val}) => {
                 <img src="data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.8413 6.28401L13.2712 4.8541L11.1459 2.72873L9.71596 4.15864L11.8413 6.28401ZM8.78757 5.08704L10.9129 7.21241L5.44804 12.6773H3.32267L3.32267 10.5519L8.78757 5.08704ZM11.378 1.10405C11.2498 0.975862 11.042 0.975862 10.9138 1.10405L2.10586 9.91196C2.04431 9.97351 2.00973 10.057 2.00973 10.1441L2.00973 13.662C2.00972 13.8433 2.15668 13.9903 2.33796 13.9903L5.85592 13.9903C5.94298 13.9903 6.02646 13.9557 6.08802 13.8941L14.8959 5.0862C15.0241 4.95802 15.0241 4.75019 14.8959 4.62201L11.378 1.10405Z' fill='%23343758'/%3E %3C/svg%3E" className="editicon"></img>
                 </div>
             </div>
-
-
+            <div>
+                <Link to=""><button onClick={()=>{}}>Hello</button></Link>
+            </div>
         </div>
     )
 }
