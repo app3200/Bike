@@ -1,0 +1,177 @@
+#login,#otpnav{
+    width: 75%;
+    margin: auto;
+}
+#myaccount{
+width:100%;
+margin: auto;
+align-items: center;
+}
+.loginnav{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2%;
+    margin-bottom:6%;  
+}
+
+.logcontent{
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    font-family: 'Inter';
+}
+.p{
+    color:#151619;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+}
+.p2{
+    color:#151619;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400; 
+    /* margin-top: -2%; */
+}
+.input{
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    line-height: 18px;
+    font-size: 16px;
+    letter-spacing: 0.7px;
+    color: #4f4f4f;
+
+}
+.number{
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: 400;
+    padding: 14px 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-top:3%;
+    margin-bottom: 1.5%;
+}
+#Otp{
+    display: none;
+}
+.gray{
+    color:white;
+    background-color: #8D99A7;
+    padding:3%;
+    width:130px;
+    height:50px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 8px;
+    border: 1px solid #8D99A7;
+    margin-top: 10%;
+}
+.help{
+    text-align: right;
+    width:20%;
+   
+}
+.span1{
+    color:#0F97DF;
+    display: inline-block;
+    margin: 3%;
+    padding-top: 3%;
+    vertical-align: top;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+}
+.profile{
+    display: inline-block;
+    margin: 2%;
+}
+.green{
+    color:white;
+    background-color: #44CB86;
+    padding:3%;
+    width:130px;
+    height:50px;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 8px;
+    border: 1px solid #44CB86;
+    margin-top: 10%;
+}
+.checkbox{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+.rimuw{
+    display: inline-block;
+    font-family: 'Inter';
+    font-weight: 600;
+    margin: 0px 0px 0px 10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(40, 46, 51);
+}
+.policy{
+    margin-top: 50%;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 12px;
+}
+.span{
+    color:#0F97DF;
+}
+.otp1{
+    width:60px;
+    height: 60px;
+    border-radius: 8px;
+    border: 1px solid #DBDDE4;
+    text-align: center;
+    margin: 2%;
+    display: inline-block;
+    outline: none;
+    font-size: 16px;
+}
+.otp{
+width:50%;
+}
+.resent{
+    font-size: 14px;
+    font-family: 'Inter';
+    cursor: pointer;
+    font-size: 14px;
+    color: #2871ea;
+    font-weight: 600;
+}
+.rotp{
+    margin-top: 5%;
+}
+.accountdiv{
+background-color: #F6F7FB;
+width:100%
+}
+@media only screen and (max-width:1020px){
+    .otp{
+        width: 320px;
+    }
+}
+@media only screen and (max-width:410px){
+    .rimuw{
+        margin: 0%;
+    }
+    .checkbox{
+        width: 4%;
+    }
+}
+@media only screen and (max-width:425px){
+    .help{
+        width: 30%;
+    }
+  
+}
