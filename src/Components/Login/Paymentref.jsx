@@ -59,15 +59,15 @@
                     <div className="first_inner_div_pi">
                         <div className="flex_pi_div">
                             <div className="inner_flex_pi_div">
-                                <p className="bankAcc_text">Bank Account</p>
-                                <p className="dkhalg">Bank account transfers are done via NEFT &amp; will take 2-3 working days to transfer the claim amount.</p>
+                                <p className="bankAcc_text">Wallet</p>
+                                <p className="dkhalg">Immediately transfer money to Paytm and Amazon pay wallet services.</p>
                                 <div className="url_rightarrow_div">
-                                <p className="url_rightarrow_div_text">Add bank account</p>
+                                <p className="url_rightarrow_div_text">Add wallet</p>
                                 <img src="https://container-app.ackoassets.com/am/myaccount_frontend/e0b35b09f97b79e28efc3c4e83365635.svg" height="16px" width="16px" className="arrow_at_left_text"></img>
                                 </div>
                             </div>
                             <div className="icon_div_pi">
-                            <img src="https://container-app.ackoassets.com/am/myaccount_frontend/315a028e06f8b35b5557781253f145d7.svg" height="64px" width="64px" className="icon_div_pi"/>
+                            <img src="	https://container-app.ackoassets.com/am/myaccount_frontend/141f115fdffe8488efbbd9dd37bea335.svg" height="64px" width="64px" className="icon_div_pi"/>
 
                             </div>
                         </div>

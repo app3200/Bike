@@ -12,8 +12,9 @@ import {Navbar2} from "./Components/checkoutflow/Navbar2"
 import {Planselector} from "./Components/checkoutflow/planselector"
 import {Checkout} from "./Components/checkoutflow/Checkout"
 import { Home } from "./Components/Home/Home";
-
-
+import{ PersonalDetails} from "./Components/Login/PersonalDetails"
+import{ Paymentref} from "./Components/Login/Paymentref"
+import{ MyProfile} from "./Components/Login/MyProfile"
 
 function App() {
   return (
@@ -29,7 +30,11 @@ function App() {
        <Route path="/selectbike" element={<SelectBike/>}></Route>
        <Route path="/planselector" element={<><Navbar2/><Planselector/></>}/>
        <Route path="/checkout" element={<><Navbar2/><Checkout/></>}/>
+        <Route path="/myprofile" element={<MyProfile/>}/>
      </Routes>
+     {/* <MyProfile/> */}
+     {/* < PersonalDetails/>
+     <Paymentref/> */}
     </div>
   );
 }
