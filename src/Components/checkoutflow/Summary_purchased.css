@@ -107,6 +107,7 @@
     width: 100%;
     display: flex;
     margin: 0px 0px 2rem;
+    margin-top:30px;
 }
 .verify_info_text{
     margin: 0px;
@@ -272,8 +273,9 @@
     width: 100%;
     border: 1px solid rgb(228, 234, 241);
     border-radius: 6px;
-    padding: 1.875rem 1.125rem;
+    padding: 1.5rem 1rem;
     background: rgb(246, 247, 251);
+    box-sizing: border-box;
 }
 .bike_logo_div_flex{
     width: 100%;
@@ -354,7 +356,7 @@
     color: rgb(21, 22, 25);
 }
 .inputfeild_div_outer{
-    width: 100%;
+    width: 90%;
     border: 1px solid rgb(214, 217, 224);
     border-radius: 6px;
     padding: 1.5rem 1.25rem;

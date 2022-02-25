@@ -91,7 +91,7 @@ body {
   height: 70px;
 }
 #prcComp {
-  border: 1px solid rgb(226, 220, 220);
+  /* border: 1px solid rgb(226, 220, 220); */
   width: 40%;
   border-radius: 10px;
 }

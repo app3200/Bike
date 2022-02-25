@@ -1,8 +1,10 @@
 import "./Checkout.css";
-import { useSelector,useDispatch } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useState } from "react";
-import {Personaladd} from "../../ReduxStore/actions"
-
+import { Personaladd } from "../../ReduxStore/actions";
+import { Pricingdiv } from "./pricing_div";
+import "./Summary_purchased.css";
+import { Link } from "react-router-dom";
 
 export const Checkout = () => {
   const monthNames = [
@@ -25,20 +27,17 @@ export const Checkout = () => {
   const year = dateObj.getFullYear();
   const output = month + " " + (Number(day) + 3) + "  " + year;
 
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [pin, setPin] = useState();
 
-  const [name,setName]=useState();
-  const [email,setEmail]=useState();
-  const [pin,setPin]=useState();
+  const dispatch = useDispatch();
 
-  const dispatch =useDispatch();
-
-
-  const gatherD=()=>{
-    dispatch(Personaladd({name:name,email:email,pin_code:pin}))
-  }
-  const phone=useSelector((e)=>e.phone)
-  const vehicle=useSelector((e)=>e.vehicleD)
-
+  const gatherD = () => {
+    dispatch(Personaladd({ name: name, email: email, pin_code: pin }));
+  };
+  const phone = useSelector((e) => e.phone);
+  const vehicle = useSelector((e) => e.vehicleD);
 
   return (
     <div id="mdiv">
@@ -54,7 +53,7 @@ export const Checkout = () => {
           </div>
           <div>
             <div className="rnum">3</div>
-            <p className="Cp">Review & pay</p>
+            <p className="Cp">Review &amp; pay</p>
           </div>
         </div>
 
@@ -67,7 +66,7 @@ export const Checkout = () => {
                 id="name"
                 className="form__field"
                 placeholder="Full Name (as per RC)"
-                onInput={(e)=>{
+                onInput={(e) => {
                   setName(e.target.value);
                 }}
               />
@@ -81,7 +80,7 @@ export const Checkout = () => {
                 id="email"
                 className="form__field"
                 placeholder="Email"
-                onInput={(e)=>{
+                onInput={(e) => {
                   setEmail(e.target.value);
                 }}
               />
@@ -113,7 +112,7 @@ export const Checkout = () => {
                 value={vehicle.vehicle_no}
                 disabled
               />
-              <label  className="lbl" htmlFor="bike_no" className="form__label">
+              <label className="lbl" htmlFor="bike_no" className="form__label">
                 Bike Number
               </label>
             </div>
@@ -123,11 +122,11 @@ export const Checkout = () => {
                 id="pin_code"
                 className="form__field"
                 placeholder="Pin Code"
-                onInput={(e)=>{
+                onInput={(e) => {
                   setPin(e.target.value);
                 }}
               />
-              <label  className="lbl" htmlFor="pin_code" className="form__label">
+              <label className="lbl" htmlFor="pin_code" className="form__label">
                 Pin Code
               </label>
             </div>
@@ -209,12 +208,23 @@ export const Checkout = () => {
               </div>
             </div>
             <div id="btnd">
-              <button id="cbtn" onClick={()=>{gatherD()}}>Continue</button>
+              <Link to="/verify">
+                <button
+                  id="cbtn"
+                  onClick={() => {
+                    gatherD();
+                  }}
+                >
+                  Continue
+                </button>
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      <div id="prcComp"></div>
+      <div id="prcComp">
+        <Pricingdiv price={vehicle.i_amt} />
+      </div>
     </div>
   );
 };
