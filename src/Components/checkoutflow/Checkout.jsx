@@ -70,7 +70,7 @@ export const Checkout = () => {
                   setName(e.target.value);
                 }}
               />
-              <label className="lbl" htmlFor="name" className="form__label">
+              <label className="lbl form__label" htmlFor="name" >
                 Full name (as per RC)
               </label>
             </div>
@@ -84,7 +84,7 @@ export const Checkout = () => {
                   setEmail(e.target.value);
                 }}
               />
-              <label className="lbl" htmlFor="email" className="form__label">
+              <label className="lbl form__label" htmlFor="email" >
                 Email
               </label>
             </div>
@@ -97,7 +97,7 @@ export const Checkout = () => {
                 value={phone}
                 disabled
               />
-              <label className="lbl" htmlFor="mobile" className="form__label">
+              <label  className="lbl form__label" htmlFor="mobile">
                 Mobile
               </label>
               <p id="otpp">Otp will be sent to this number</p>
@@ -112,7 +112,7 @@ export const Checkout = () => {
                 value={vehicle.vehicle_no}
                 disabled
               />
-              <label className="lbl" htmlFor="bike_no" className="form__label">
+              <label  className="lbl form__label" htmlFor="bike_no" >
                 Bike Number
               </label>
             </div>
@@ -126,7 +126,7 @@ export const Checkout = () => {
                   setPin(e.target.value);
                 }}
               />
-              <label className="lbl" htmlFor="pin_code" className="form__label">
+              <label  className="lbl form__label" htmlFor="pin_code">
                 Pin Code
               </label>
             </div>
