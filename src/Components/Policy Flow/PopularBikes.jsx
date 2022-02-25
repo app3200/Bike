@@ -4,7 +4,7 @@ import {useDispatch} from "react-redux"
 import {Vehicleadd} from "../../ReduxStore/actions"
 
 
-export const PopularBikes = ({fun}) => {
+export const PopularBikes = ({fun,pricebtn}) => {
     let [show,setShow]=useState(false)
     let [text,setText]=useState("");
     const dispatch =useDispatch();
@@ -20,7 +20,7 @@ export const PopularBikes = ({fun}) => {
       dispatch(Vehicleadd({vehicle_name:val}))
       
    }
-    return (show===true)?<SelectedBike val={text}/>: (
+    return (show===true)?<SelectedBike val={text} pricebtn={pricebtn}/>: (
             <div className="popularbikeouter">
                     <div className="popinner">
                         <div className="popinner2">

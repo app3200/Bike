@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
 import { PolicyStatus } from "./PolicyStatus";
 import { PopularBikes } from "./PopularBikes";
 import { Years } from "./Years";
@@ -12,6 +13,10 @@ export const Initialpage = () => {
     const [hideinput,setHideinput]=useState(false);
     const [year,setYear]=useState(2009)
     const [ policydiv, setPolicydiv] = useState("Policy not Expired")
+    const [priceapprove,setPriceapprove]=useState(false)
+    function setpricebutton(){
+        setPriceapprove(true)
+    }
     function controlhideinput(){
         setHideinput((prev)=>!prev)
     }
@@ -47,7 +52,7 @@ export const Initialpage = () => {
                         </div>
                         </div>
                     </div>:null}
-                    {(popbike===true)?<PopularBikes fun={controlhideinput}/>:null}
+                    {(popbike===true)?<PopularBikes fun={controlhideinput} pricebtn={setpricebutton}/>:null}
                     {/* Bike Bought in */}
                     <div className="Bikeboughinouterdiv">
                         <div className="bb1 bb2">
@@ -92,6 +97,7 @@ export const Initialpage = () => {
                         </div>
                         </div>
                     </div>
+                    {(priceapprove)?<Link to="/planselector"><button className="Price-btn">View Prices</button></Link>:null}
                     </div>
 
         </div>

@@ -1,0 +1,447 @@
+#_next{
+    width: 100%;
+    height: 100%;
+  }
+  .ackologo{
+    width: 100%;
+      border-bottom: 1px solid rgb(244, 245, 247);
+      display: flex;
+      -webkit-box-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      justify-content: center;
+  }
+  body{
+    font-family: "system-ui","Helvetica Neue",Helvetica,Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      -webkit-scroll-behavior: smooth;
+      -moz-scroll-behavior: smooth;
+      -ms-scroll-behavior: smooth;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+      display: block;
+  }
+  .flexlogo{
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    max-width: 1170px;
+    height: 70px;
+    width: 100%;
+  }
+  @media (max-width: 1220px) and (min-width: 769px) {
+    .flexlogo{
+        padding: 0px 24px;
+  }
+}
+
+
+.ackologoimage{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: auto;
+}
+.infobox_outer{
+    width: 100%;
+
+    
+}
+.inner_infobox{
+    width: 100%;
+    max-width: 1200px;
+    min-width: 1200px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+.inner_s_infobox{
+    width: 100%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.inner_flex_infobox{
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+    padding: 0px 5.25rem;
+}
+.bike_policy_data{
+    width: 56%;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 12px;
+    padding: 20px;
+}
+.navabar_bike_policy_data{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 15px 0px;
+    margin: 0px auto 15px;
+    width: max-content;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.navabar_bike_policy_data >span{
+    font-weight: 500;
+    font-size: 11px;
+    color: rgb(21, 22, 25);
+}
+.verify_info_text_div{
+    width: 100%;
+    display: flex;
+    margin: 0px 0px 2rem;
+}
+.verify_info_text{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 29px;
+    text-align: center;
+    color: rgb(21, 22, 25);
+}
+.bike_bikeowner_details_outer_div{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 10rem;
+    width: 430px;
+}
+.bike_details_outer{
+    width: 100%;
+    margin-top: 0px;
+}
+.bike_details_inner{
+    width: 100%;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.bike_details_text{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 17px;
+    letter-spacing: 0.5px;
+    color: rgb(0, 0, 0);
+}
+.title_data_div{
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    margin: 1.25rem 0px 0px;
+}
+.title_text_info{
+    margin: 0px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 15px;
+    color: rgb(85, 90, 104)
+}
+.data_text_info{
+    margin: 0px;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 15px;
+    color: rgb(21, 22, 25);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+}
+.hrline{
+    width: 100%;
+    border: 1px solid rgb(244, 245, 247);
+    margin-top: 2rem;
+}
+.bike_owner_details_outer{
+    width: 100%;
+    margin-top: 2.5rem;
+}
+.kxpoxR{
+    width: 100%;
+    margin-top: 1.75rem;
+}
+.updates_on_wsp_outer{
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.left_updated_text{
+    display: flex;
+    width: fit-content;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 1rem;
+}
+.unticked{
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    box-sizing: content-box;
+    border: 1px solid rgb(85, 90, 104);
+}
+.price_button_div{
+    display: flex;
+    width: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+.Paybutton{
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgb(88, 44, 219);
+    border: 1.5px solid rgb(88, 44, 219);
+    color: rgb(255, 255, 255);
+    min-width: 155px;
+    margin: 30px 0px;
+    font-size: 16px;
+    padding: 14px 16px;
+}
+.Paybutton, .Paybutton:hover {
+    background: rgb(55, 200, 126);
+    border: 1px solid rgb(55, 200, 126);
+}
+.trustedby_div{
+    display: flex;
+    width: fit-content;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px 20px;
+}
+.thums_up_svg{
+    width: 45px;
+    height: 45px;
+}
+.trusted_by_indians_text{
+    font-weight: 500;
+    font-size: 9px;
+    color: rgb(67, 79, 90);
+}
+.pricingdiv_bike{
+    display: flex;
+    width: 40%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+.bike_logo_price{
+    width: 100%;
+    border: 1px solid rgb(228, 234, 241);
+    border-radius: 6px;
+    padding: 1.875rem 1.125rem;
+    background: rgb(246, 247, 251);
+}
+.bike_logo_div_flex{
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.third_party_text{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgb(21, 22, 25);
+}
+.bike_full_name{
+    margin: 0.5rem 0px 0px;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: rgb(65, 74, 83);
+}
+.bike_svg_logo{
+    width: 100px;
+    height: auto;
+}
+.pricing_div{
+    width: 100%;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 1rem 0px;
+    margin: 1rem 0px;
+}
+.title_price_flex_div:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.title_price_flex_div{
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.pricing_div_title{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 17px;
+    color: rgb(21, 22, 25);
+}
+.pricing_div_price{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 17px;
+    color: rgb(21, 22, 25);
+}
+.total_price_show_div{
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+.total_text_style{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 21px;
+    color: rgb(21, 22, 25);
+}
+.total_text_value_style{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 24px;
+    color: rgb(21, 22, 25);
+}
+.inputfeild_div_outer{
+    width: 100%;
+    border: 1px solid rgb(214, 217, 224);
+    border-radius: 6px;
+    padding: 1.5rem 1.25rem;
+    margin: 20px 0px 0px;
+}
+.get_off_flex_div{
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 0.875rem;
+}
+.get_off_text{
+    margin: 2px 0px 0px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 17px;
+    color: rgb(69, 79, 89);
+    width: 65%;
+}
+.input_car_number{
+    position: relative;
+    width: 100%;
+    margin: 0px;
+}
+.inputfeild_carnumber{
+    border: 1px solid rgb(214, 217, 224);
+    border-radius: 8px;
+    padding: 1.18em 3em 1.18em 1.18em;
+    font-size: 0.875rem;
+    width: 80%;
+    outline: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    height: 55px;
+}
+.enter_car_number_text{
+    margin: 0px;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    display: inline-block;
+    background-color: white;
+    padding: 0px 5px;
+  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+   
+    color: rgb(21, 22, 25);
+
+}
+.expirydate{
+    width: 100%;
+    position: relative;
+}
+.calendericon{
+    width: fit-content;
+    position: absolute;
+    top: 30%;
+    right: 40px;
+}
+.calender_logo{
+    width: 20px;
+    height: 20px;
+}
+.submit_button{
+    box-sizing: inherit;
+    font-family: inherit;
+    border-radius: 6px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1em 3em;
+    font-size: 0.875rem;
+    background-color: rgb(88, 44, 219);
+    border: 1.5px solid rgb(88, 44, 219);
+    color: rgb(255, 255, 255);
+    width: 40%;
+    margin-top: 1.5rem;
+}
