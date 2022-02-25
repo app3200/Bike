@@ -211,9 +211,7 @@ export const Myaccount = () => {
               </div>
             </div>
           </div>
-          <div className="newpolicy">
-            <div id="fixed">
-              <p className="newp1 none ">Looking for a new policy?</p>
+        
               
              <div className="newpolicy">
                <div id="fixed">
@@ -253,7 +251,9 @@ export const Myaccount = () => {
                      <div className="section1">
                        <p className="sp1">Got a bike?</p>
                        <p className="sp2">We've got a sweet deal for your bike!</p>
-                       <Link to="/myaccount"><div className="link"><div className="sp3 ">Insure</div></div></Link>
+                       <div className="link"><div className="sp3 " onClick={()=>{
+                         navigate("/new-bike")
+                       }}>Insure</div></div>
                      </div>
                  </div>
                  <div className="newdiv1">
@@ -267,8 +267,6 @@ export const Myaccount = () => {
                  </div>
              </div>
              </div>
-          </div>
-        </div>
       </div>
       <div className="flexdiv">
         <p className="footer">CIN: U66000MH2016PLC287385</p>

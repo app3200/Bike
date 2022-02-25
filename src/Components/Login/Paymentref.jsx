@@ -3,7 +3,7 @@
          <div className="paymentdivouter">
                 <div className="payment_text_flexdiv">
                 <img src="https://container-app.ackoassets.com/am/myaccount_frontend/fa93e5ad221e98f3065baab21e06237f.svg" className="left_side_arrow"/>
-                <p className="personalDetails_text">Payout Refernce</p>
+                <p className="personalDetails_text">Payout preference</p>
                 </div>
 
                 {/* Payment social alert div */}
