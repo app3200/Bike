@@ -24,7 +24,7 @@ function App() {
       {/* <Navbar></Navbar>
      <Hero></Hero>  */}
      <Routes>
-       {/* <Route path="/" element={<Summary_purchsed/>}></Route> */}
+       
        <Route path="/" element={<Home></Home>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/otp" element={<Otp/>}></Route>
@@ -32,6 +32,7 @@ function App() {
        <Route path="/selectbike" element={<SelectBike/>}></Route>
        <Route path="/planselector" element={<><Navbar2/><Planselector/></>}/>
        <Route path="/checkout" element={<><Navbar2/><Checkout/></>}/>
+       <Route path="/verify" element={<Summary_purchsed/>}></Route>
        <Route path="/new-bike" element={<NewBike></NewBike>}/>
      </Routes>
     </div>
