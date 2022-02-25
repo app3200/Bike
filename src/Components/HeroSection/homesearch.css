@@ -189,3 +189,18 @@
   background: transparent;
   cursor: pointer;
 }
+
+/* animation for the div */
+
+.bottomUp {
+  -webkit-animation: mover 1s 5 alternate;
+  animation: mover 1s 5 alternate;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
