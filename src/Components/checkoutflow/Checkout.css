@@ -1,6 +1,235 @@
-#mdiv{
-    border:1px solid red;
-    width:60%;
-    margin:auto;
-    margin-top:40px;
+body {
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#mdiv {
+  width: 65%;
+  margin: auto;
+  margin-top: 36px;
+  display: flex;
+  gap: 5%;
+}
+
+#Dcomp {
+  border: 1px solid rgb(226, 220, 220);
+  width: 55%;
+  border-radius: 10px;
+  margin: auto;
+}
+#ctask {
+  border-bottom: 1px solid rgb(226, 220, 220);
+  width: 66%;
+  margin: auto;
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 4%;
+  height: 50px;
+}
+#ctask > div {
+  height: 60%;
+}
+.num1 {
+  border: 1px solid rgb(62, 183, 83);
+  height: 54%;
+  width: 15%;
+  border-radius: 50%;
+  background-color: rgb(62, 183, 83);
+  color: white;
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 16px;
+}
+.rnum {
+  border: 1px solid rgb(226, 220, 220);
+  height: 50%;
+  width: 15%;
+  border-radius: 50%;
+  background-color: rgb(226, 220, 220);
+  color: white;
+  display: inline-block;
+  font-size: 10px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  line-height: 16px;
+}
+.Cp {
+  display: inline-block;
+  margin-left: 5%;
+  font-size: 11px;
+  font-weight: 500;
+}
+#frmd {
+  margin: auto;
+  width: 82%;
+  margin-top: 20px;
+}
+#flab {
+  margin: 1.25rem 0px 1.75rem;
+  color: rgb(69, 79, 89);
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+#form {
+  margin: auto;
+  width: 76%;
+}
+
+#frmd > div {
+  text-align: center;
+}
+.txtf {
+  width: 98%;;
+  margin-top: 1.875rem;
+  height: 70px;
+}
+#prcComp {
+  border: 1px solid rgb(226, 220, 220);
+  width: 40%;
+  border-radius: 10px;
+}
+
+.txtf {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  height: 60%;
+  border: 0;
+  border: 1px solid #929191;
+  outline: 0;
+  font-size: 16px;
+  color: #212121;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+  border-radius:6px;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  margin-top:8px;
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: -1px;
+  display: block;
+  transition: 0.2s;
+  font-size: 12px;
+  color: #929191;
+  background-color:white;
+  margin-left:2%;
+}
+
+.form__field:focus ~ .form__label {
+  color: rgb(56, 53, 53);
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border: 1px solid #929191;
+  border-radius:5px;
+}
+
+#otpp{
+  float:left;
+  font-size: 10px;
+  line-height:6px;
+  font-weight: 400;
+  margin-bottom:6px;
+}
+
+
+.dOkAqz {
+  width: 100%;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 1.65rem;
+  display: flex;
+}
+
+svg{
+  width: 36;
+  height: 36;
+  fill: none;
+}
+
+.cVJvWX {
+  width: 80%;
+  -webkit-box-align: center;
+  align-items: center;
+  margin-right: 1em;
+  margin-left: 1em;
+  display: flex;
+}
+
+.eUZkiY {
+  color: rgb(85, 90, 104);
+  margin: 0px;
+  font-size: 0.625rem;
+  font-weight: 450;
+  text-align: left;
+}
+
+#descd{
+  width:100%;
+  height:70px;
+  margin-top:30px;
+}
+
+#cld{
+  width:100%;
+  text-align:left;
+  font-size:12px;
+  font-weight:400;
+  color:rgb(93,96,126);
+}
+
+
+#tnc{
+  margin-top:15px;
+  width:100%;
+  text-align:left;
+  font-size:10px;
+  color:rgb(93, 96, 124);
+  font-weight: 500;
+}
+
+#btnd{
+  margin: auto;
+  width:40%;
+  height:46px;
+  margin-top:35px;
+  margin-bottom:30px;
+}
+
+#cbtn{
+  width:100%;
+  height:100%;
+  background-color: #37c87E;
+  color:white;
+  font-size:14px;
+  font-weight:600;
+  border:1px solid #37c87E;
+  border-radius:5px;
+
 }
