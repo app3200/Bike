@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { Dropdown } from "./Dropdown";
 import "./navbar.css";
 import { ProfileDropdown } from "./ProfileDropdown";
@@ -8,7 +9,11 @@ export const Navbar = () => {
   const [showProductsDropdown, setshowProductsDropdown] = useState(false);
   const [showResourcesDropdown, setshowResourcesDropdown] = useState(false);
   const [showLoginDropDown, setshowLoginDropdown] = useState(false);
+  const phone = useSelector((e) => e.phone);
+  console.log(phone);
+  // const [isLoggedin, setLogin] = useState(phone != undefined ? true : false);
   const [isLoggedin, setLogin] = useState(false);
+  console.log(isLoggedin);
   return (
     <header>
       <nav>
@@ -155,7 +160,7 @@ export const Navbar = () => {
                   </svg>
                 </div>
                 <p className='nav-p'>Claim, edit, renew &amp; more</p>
-                <a href={isLoggedin?"#":"/login"} className='btn-policies'>
+                <a href={isLoggedin ? "#" : "/login"} className='btn-policies'>
                   {isLoggedin ? (
                     "My policies"
                   ) : (
@@ -212,7 +217,7 @@ export const Navbar = () => {
           {showProductsDropdown ? <Triangle /> : ""}
         </div>
         {showProductsDropdown ? <Dropdown /> : ""}
-        {showLoginDropDown ? <ProfileDropdown /> : ""}
+        {showLoginDropDown ? <ProfileDropdown phone={phone} /> : ""}
       </nav>
     </header>
   );
