@@ -1,0 +1,474 @@
+.rightdiv{
+    display: flex;
+    width: 58%;
+    flex-direction: column;
+    padding-right: 3%;
+}
+
+.fdjYTU{
+    margin: 20px 0px 0px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: rgb(0, 168, 113);
+}
+
+.bIPMSu{
+    margin: 24px 0px 0px;
+    font-weight: 800;
+    font-size: 2.375rem;
+    color: rgb(11, 14, 52);
+}
+
+.inpdiv{
+    margin: 30px 0px 0px;
+    width: max-content;
+}
+
+.laKrMq {
+    position: relative;
+    border: 1px solid rgb(200, 208, 219);
+    background-color: transparent;
+    font-size: 0.875rem;
+    color: rgb(65, 74, 83);
+    padding: 8px 150px 8px 12px;
+    height: 70px;
+    width: 545px;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.dGHjEj {
+    width: 30px;
+    height: auto;
+    margin: 0px 5px;
+}
+.iZUDqT {
+    position: relative;
+}
+
+.hKJHbj {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: auto;
+    border-radius: 8px;
+    background: rgb(55, 200, 126);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 50px;
+    padding: 8px 12px 8px 14px;
+    cursor: pointer;
+    color:"white"
+}
+
+.hIwejV {
+    color: rgb(21, 22, 25);
+    margin: 0px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.grSfOF {
+    width: 545px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 118%;
+    position: relative;
+    color: rgb(112, 127, 140);
+    margin: 20px 0px;
+}
+.lcCBGW {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 55px;
+    border: 1px solid rgb(228, 234, 241);
+    border-radius: 12px;
+    margin: 20px auto 30px;
+    width: 100%;
+    background: transparent;
+}
+
+.sTWfk {
+    width: 15%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.dRZRnX {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.evTsuL {
+    width: 30%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.jViCLQ {
+    color: rgb(55, 200, 126);
+    height: 24px;
+    width: 92px;
+    border: 1px solid rgb(55, 200, 126);
+    border-radius: 6px;
+    box-sizing: content-box;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.hoqFof {
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(4, 2, 34);
+}
+
+.hJUlqp {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(91, 86, 117);
+}
+
+.doWrOm {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.dkqVpl {
+    display: flex;
+    flex: 0 0 auto;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dkqVpl {
+    display: flex;
+    flex: 0 0 auto;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dkqVpl {
+    display: flex;
+    flex: 0 0 auto;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.jnBfpU {
+    color: rgb(21, 22, 25);
+    margin: 0px 0px 0px 6px;
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+.ednpMT {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(68, 203, 134);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.gcclyn {
+    display: flex;
+    box-sizing: border-box;
+    width: auto;
+    min-width: 1024px;
+    margin: 40px 120px 50px;
+    position: relative;
+    border-radius: 15px;
+    border: 1px solid rgb(214, 217, 224);
+    padding: 20px 20px 20px 40px;
+}
+
+.kxORbS {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.PzGNy {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-right: 80px;
+}
+
+.dMFyoY {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.dMFyoY {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.eGBlbo {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.eGBlbo {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.eurAfC {
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    position: relative;
+    width: 57px;
+    height: 57px;
+}
+
+.fJsXvf {
+    margin: 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 17px 0px 0px 12.77px;
+    color: rgb(21, 22, 25);
+    text-align: center;
+}
+
+.eGBlbo {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+
+.kxJppC {
+    background: rgb(0, 0, 0);
+    position: relative;
+    padding-top: 20px;
+}
+
+.ixQUtd {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+}
+
+.hbBOrH {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    background: rgb(0, 0, 0);
+    padding: 40px 10px;
+    flex-direction: column;
+}
+
+.hxAKGH {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+}
+.ilkjKQ {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex: 3 1 0%;
+    padding-right: 60px;
+}
+
+.gbCnyw {
+    width: 100%;
+    display: flex;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.eKmKOu {
+    margin: 0px 5px 10px 0px;
+}
+
+.kQLRct {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.fpKzld {
+    font-weight: 500;
+    margin: 0px 0px 15px;
+    font-size: 16px !important;
+    color: rgb(128, 128, 128) !important;
+}
+
+.brkHuk {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.eqMpUa {
+    font-weight: 500;
+    margin: 0px 0px 10px;
+    max-width: 70%;
+    font-size: 10px !important;
+    line-height: 16px !important;
+    color: rgb(182, 182, 182) !important;
+}
+
+.fKppdK {
+    height: 30px;
+    align-self: flex-start;
+}
+
+.dxjDwC {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    flex: 2 1 0%;
+}
+
+.boTHzb {
+    text-transform: uppercase;
+    margin: 0px 0px 20px;
+    font-weight: 600 !important;
+    color: rgb(255, 255, 255) !important;
+    font-size: 12px !important;
+}
+
+.ktudoD {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bvgUCg {
+    margin: 0px 0px 10px;
+    line-height: 12px;
+}
+
+.gbCnyw {
+    width: 100%;
+    display: flex;
+}
+.hDfsUb {
+    color: rgb(182, 182, 182) !important;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.ceLWpU {
+    width: 100%;
+    display: flex;
+    position: relative;
+    background: rgb(29, 29, 29);
+    padding: 20px 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+
+}
+
+.jFKcV {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 1170px;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.cOJEBX {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.kGUaBw {
+    color: rgb(182, 182, 182);
+    margin: 0px 15px 0px 0px;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+
+.kjjanz {
+    margin: 0px 0px 5px;
+    font-size: 10px !important;
+    color: rgb(128, 128, 128) !important;
+    font-weight: 400 !important;
+}
+
+.kgMFVK {
+    margin: 20px 0px 0px;
+    font-size: 8px;
+    font-weight: 400;
+    color: rgb(191, 191, 191);
+    text-align: left;
+}
+
+.cOJEBX {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}

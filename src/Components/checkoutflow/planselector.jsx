@@ -2,8 +2,9 @@ import { useState } from "react";
 import "./planselector.css";
 import { Plancards1 } from "./Plancards1";
 import { Plancards2 } from "./Plancards2";
-import { useSelector } from "react-redux";
-
+import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+import {Vehicleadd} from "../../ReduxStore/actions"
 
 export const Planselector = () => {
   const [d1prc3, setd13prc] = useState(2256);
@@ -13,8 +14,11 @@ export const Planselector = () => {
   const [d2prc2, setd22prc] = useState(1657);
   const [d2prc1, setd21prc] = useState(863);
   const [accmon, setacc] = useState(1050);
+
+  const dispatch = useDispatch();
+
   const [add, toggle] = useState(false);
-  const [tp,setTp]=useState();
+  const [tp, setTp] = useState();
 
   function remove() {
     toggle(!add);
@@ -46,35 +50,33 @@ export const Planselector = () => {
     setacc(350);
   }
 
-  function setValue(nam){
-    setTp(nam)
+  function setValue(nam) {
+    setTp(nam);
   }
 
-  
-  function final(){
-    console.log(tp)
+  function final() {
+    dispatch(Vehicleadd({i_amt:tp}))
   }
 
-  const Vname=useSelector((e) => e.vehicleD);
-
+  const Vname = useSelector((e) => e.vehicleD);
   return (
     <div>
       <div id="maindiv">
         <div id="div1">
-          <p>Plans for your Bajaj Pulsar 150 150CC</p>
+          <p>Plans for your {Vname.vehicle_name}</p>
           <div id="vinfo">
             <div className="vdet">
-              <p>Bajaj Pulsar 150 150CC</p>
+              <p>{Vname.vehicle_name}</p>
             </div>
             <div className="pointer">.</div>
             <div className="vdet">
-              <p>Bike Bought in 2009</p>
+              <p>Bike Bought in {Vname.reg_year}</p>
             </div>
             <div className="pointer">.</div>
             <div className="vdet">
               <p>Current Policy Expired</p>
             </div>
-            <a href="#">Edit</a>
+            <Link to="/selectbike">Edit</Link>
           </div>
         </div>
         <div id="div2">
