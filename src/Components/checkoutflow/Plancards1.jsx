@@ -34,7 +34,7 @@ export const Plancards1 = ({
           </div>
         </div>
         <div className="splans">
-          <div className="inpdiv">
+          <div className="inpdivplan">
             <div className="drinp">
               <input
                 type="radio"
@@ -56,7 +56,7 @@ export const Plancards1 = ({
               <p className="p2">+GST</p>
             </div>
           </div>
-          <div className="inpdiv">
+          <div className="inpdivplan">
             <div className="drinp">
               <input
                 type="radio"
@@ -78,7 +78,7 @@ export const Plancards1 = ({
               <p className="p2">+GST</p>
             </div>
           </div>
-          <div className="inpdiv">
+          <div className="inpdivplan">
             <div className="drinp">
               <input
                 type="radio"
