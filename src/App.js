@@ -23,8 +23,8 @@ function App() {
       {/* <Navbar></Navbar>
      <Hero></Hero>  */}
      <Routes>
-       {/* <Route path="/" element={<Summary_purchsed/>}></Route> */}
-       <Route path="/" element={<Home></Home>}></Route>
+       <Route path="/" element={<Summary_purchsed/>}></Route>
+       {/* <Route path="/" element={<Home></Home>}></Route> */}
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/otp" element={<Otp/>}></Route>
        <Route path="/myaccount" element={<Myaccount/>}></Route>
