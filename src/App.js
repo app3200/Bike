@@ -12,9 +12,12 @@ import {Navbar2} from "./Components/checkoutflow/Navbar2"
 import {Planselector} from "./Components/checkoutflow/planselector"
 import {Checkout} from "./Components/checkoutflow/Checkout"
 import { Home } from "./Components/Home/Home";
+import { NewBike } from "./Components/Authentication/NewBike";
+import { Summary_purchsed } from "./Components/checkoutflow/Summary_purchased";
 import{ PersonalDetails} from "./Components/Login/PersonalDetails"
 import{ Paymentref} from "./Components/Login/Paymentref"
 import{ MyProfile} from "./Components/Login/MyProfile"
+
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
       {/* <Navbar></Navbar>
      <Hero></Hero>  */}
      <Routes>
+       
        <Route path="/" element={<Home></Home>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/otp" element={<Otp/>}></Route>
@@ -30,7 +34,9 @@ function App() {
        <Route path="/selectbike" element={<SelectBike/>}></Route>
        <Route path="/planselector" element={<><Navbar2/><Planselector/></>}/>
        <Route path="/checkout" element={<><Navbar2/><Checkout/></>}/>
-        <Route path="/myprofile" element={<MyProfile/>}/>
+       <Route path="/verify" element={<Summary_purchsed/>}></Route>
+       <Route path="/new-bike" element={<NewBike></NewBike>}/>
+       <Route path="/myprofile" element={<MyProfile/>}/>
      </Routes>
      {/* <MyProfile/> */}
      {/* < PersonalDetails/>

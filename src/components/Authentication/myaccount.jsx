@@ -1,8 +1,11 @@
 import "./login.css";
-import "./myaccount.css";
+import "./myaccount.css"
+
+import {useNavigate} from "react-router-dom"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 export const Myaccount = () => {
+  const navigate =useNavigate()
   const [pro, setPro] = useState(false);
   const k = JSON.parse(localStorage.getItem("phoneno"));
   return (
@@ -211,82 +214,59 @@ export const Myaccount = () => {
           <div className="newpolicy">
             <div id="fixed">
               <p className="newp1 none ">Looking for a new policy?</p>
-              <div className="newdiv1 looking">
-                <div className="cardiv bc1">
-                  <div className="carimg">
-                    <img src="https://myaccount.ackoassets.com/static/images/Car-new.svg" />
-                  </div>
-                  <div className="title">
-                    <span className="pname">Car</span>
-                    <img
-                      className="divimg"
-                      src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"
-                    />
-                  </div>
-                </div>
-                <Link to="/myaccount">
-                  <div className="cardiv bc2">
-                    <div className="carimg">
-                      <img src="https://myaccount.ackoassets.com/static/images/Bike-new.svg" />
-                    </div>
-                    <div className="title">
-                      <span className="pname">Bike</span>
-                      <img
-                        className="divimg"
-                        src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"
-                      />
-                    </div>
-                  </div>
-                </Link>
-                <div className="cardiv bc3">
-                  <div className="carimg">
-                    <img src="https://myaccount.ackoassets.com/static/images/ic_health_home_new.svg" />
-                  </div>
-                  <div className="title">
-                    <span className="pname">Health</span>
-                    <img
-                      className="divimg"
-                      src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="newdiv1">
-                <div className="section">
-                  <img src="https://myaccount.ackoassets.com/static/images/car-new.svg" />
-                </div>
-                <div className="section1">
-                  <p className="sp1">Got a car?</p>
-                  <p className="sp2">Save big on your car insurance.</p>
-                  <div className="sp3">Insure</div>
-                </div>
-              </div>
-              <div className="newdiv1">
-                <div className="section">
-                  <img src="https://myaccount.ackoassets.com/static/images/scooter-shield-front.svg" />
-                </div>
-                <div className="section1">
-                  <p className="sp1">Got a bike?</p>
-                  <p className="sp2">We've got a sweet deal for your bike!</p>
-                  <Link to="/myaccount">
-                    <div className="link">
-                      <div className="sp3 ">Insure</div>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-              <div className="newdiv1">
-                <div className="section">
-                  <img src="https://myaccount.ackoassets.com/static/images/golden-shield.svg" />
-                </div>
-                <div className="section1">
-                  <p className="sp1">
-                    Understand different covers of a Car insurance policy
-                  </p>
-                  <div className="sp33 sp3">Read More</div>
-                </div>
-              </div>
-            </div>
+              
+             <div className="newpolicy">
+               <div id="fixed">
+                 <p className="newp1 none ">Looking for a new policy?</p>
+                 <div className="newdiv1 looking">
+                     <div className="cardiv bc1">
+                         <div className="carimg"><img src="https://myaccount.ackoassets.com/static/images/Car-new.svg"/></div>
+                         <div className="title"><span className="pname">Car</span><img className="divimg" src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"/></div>
+                     </div>
+                     {/* <Link to="/myaccount"> */}
+                     <div className="cardiv bc2" onClick={()=>{
+                       navigate("/new-bike")
+                     }}>
+                         <div className="carimg"><img src="https://myaccount.ackoassets.com/static/images/Bike-new.svg"/></div>
+                         <div className="title"><span className="pname">Bike</span><img className="divimg" src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"/></div>
+                     </div>
+                     {/* </Link> */}
+                     <div className="cardiv bc3">
+                         <div className="carimg"><img src="https://myaccount.ackoassets.com/static/images/ic_health_home_new.svg"/></div>
+                         <div className="title"><span className="pname">Health</span><img className="divimg" src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"/></div>
+                     </div>
+                 </div>
+                 <div className="newdiv1">
+                     <div className="section">
+                       <img src="https://myaccount.ackoassets.com/static/images/car-new.svg"/>
+                     </div>
+                     <div className="section1">
+                       <p className="sp1">Got a car?</p>
+                       <p className="sp2">Save big on your car insurance.</p>
+                       <div className="sp3">Insure</div>
+                     </div>
+                 </div>
+                 <div className="newdiv1">
+                     <div className="section">
+                       <img src="https://myaccount.ackoassets.com/static/images/scooter-shield-front.svg"/>
+                     </div>
+                     <div className="section1">
+                       <p className="sp1">Got a bike?</p>
+                       <p className="sp2">We've got a sweet deal for your bike!</p>
+                       <Link to="/myaccount"><div className="link"><div className="sp3 ">Insure</div></div></Link>
+                     </div>
+                 </div>
+                 <div className="newdiv1">
+                     <div className="section">
+                       <img src="https://myaccount.ackoassets.com/static/images/golden-shield.svg"/>
+                     </div>
+                     <div className="section1">
+                       <p className="sp1">Understand different covers of a Car insurance policy</p>
+                       <div className="sp33 sp3">Read More</div>
+                     </div>
+                 </div>
+             </div>
+             </div>
           </div>
         </div>
       </div>
@@ -296,5 +276,6 @@ export const Myaccount = () => {
         <p className="footer none">Category: Non-Life Insurance</p>
       </div>
     </div>
+    </div>
   );
-};
+}
