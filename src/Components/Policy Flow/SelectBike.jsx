@@ -1,5 +1,6 @@
 
 
+import { Link } from "react-router-dom"
 import { Initialpage } from "./Initialpage"
 
 import "./SelectBike.css"
@@ -24,7 +25,8 @@ export const SelectBike = () => {
             <div className="innermaininputbox">
                 <div className="bikenumberedit">
                 MH40SR1649
-                <span role="button" >EDIT</span>
+                
+                <span role="button" ><Link to="/">EDIT</Link></span>
                 </div>
 
                 
