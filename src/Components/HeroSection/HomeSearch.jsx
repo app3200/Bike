@@ -1,15 +1,10 @@
 import "./homesearch.css";
 import { SearchForm, searchForm } from "./SearchForm";
-import { useState, useEffect } from "react";
 
 export const HomeSearch = ({ status }) => {
   const { isBikeClicked, isCarClicked, isHealthClicked } = status;
   // setbottomUp(isBikeClicked || isCarClicked || isHealthClicked);
   let name = isBikeClicked ? "bike" : isCarClicked ? "car" : "car";
-  const [bottomUp, setBottomUp] = useState(false);
-  useEffect(() => {
-    setBottomUp((prev) => !prev);
-  }, [isBikeClicked, isCarClicked, isHealthClicked]);
   return (
     <div className={`ktCqFd bottomUp`}>
       <div className='LRcGK'>

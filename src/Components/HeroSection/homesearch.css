@@ -193,8 +193,8 @@
 /* animation for the div */
 
 .bottomUp {
-  -webkit-animation: mover 1s 5 alternate;
-  animation: mover 1s 5 alternate;
+  -webkit-animation: mover 1s 2 alternate;
+  animation: mover 1s 2 alternate;
 }
 @keyframes mover {
   0% {

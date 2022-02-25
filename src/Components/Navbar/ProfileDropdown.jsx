@@ -1,4 +1,4 @@
-export const ProfileDropdown = () => {
+export const ProfileDropdown = ({phone}) => {
   return (
     <div className='profile-dropdown'>
       <div className='profile-wrapper'>
@@ -26,8 +26,8 @@ export const ProfileDropdown = () => {
                     </svg>
                   </div>
                   <div className='dgObov'>
-                    <p className='ecadKN'>Durgesh rai</p>
-                    <p className='jXCDif'>8299027233</p>
+                    <p className='ecadKN'>User</p>
+                    <p className='jXCDif'>{phone}</p>
                   </div>
                 </div>
               </div>
