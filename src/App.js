@@ -12,6 +12,7 @@ import {Navbar2} from "./Components/checkoutflow/Navbar2"
 import {Planselector} from "./Components/checkoutflow/planselector"
 import {Checkout} from "./Components/checkoutflow/Checkout"
 import { Home } from "./Components/Home/Home";
+import { NewBike } from "./Components/Authentication/NewBike";
 import { Summary_purchsed } from "./Components/checkoutflow/Summary_purchased";
 
 
@@ -31,6 +32,7 @@ function App() {
        <Route path="/selectbike" element={<SelectBike/>}></Route>
        <Route path="/planselector" element={<><Navbar2/><Planselector/></>}/>
        <Route path="/checkout" element={<><Navbar2/><Checkout/></>}/>
+       <Route path="/new-bike" element={<NewBike></NewBike>}/>
      </Routes>
     </div>
   );

@@ -1,8 +1,10 @@
 import "./login.css";
 import "./myaccount.css"
+import {useNavigate} from "react-router-dom"
 import { useState } from "react";
 import {Link} from "react-router-dom"
 export const Myaccount = () => {
+  const navigate =useNavigate()
   const [pro,setPro]=useState(false)
   const k=JSON.parse(localStorage.getItem("phoneno"))
   return (
@@ -167,11 +169,14 @@ export const Myaccount = () => {
                          <div className="carimg"><img src="https://myaccount.ackoassets.com/static/images/Car-new.svg"/></div>
                          <div className="title"><span className="pname">Car</span><img className="divimg" src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"/></div>
                      </div>
-                     <Link to="/myaccount">
-                     <div className="cardiv bc2">
+                     {/* <Link to="/myaccount"> */}
+                     <div className="cardiv bc2" onClick={()=>{
+                       navigate("/new-bike")
+                     }}>
                          <div className="carimg"><img src="https://myaccount.ackoassets.com/static/images/Bike-new.svg"/></div>
                          <div className="title"><span className="pname">Bike</span><img className="divimg" src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"/></div>
-                     </div></Link>
+                     </div>
+                     {/* </Link> */}
                      <div className="cardiv bc3">
                          <div className="carimg"><img src="https://myaccount.ackoassets.com/static/images/ic_health_home_new.svg"/></div>
                          <div className="title"><span className="pname">Health</span><img className="divimg" src="https://container-app.ackoassets.com/am/myaccount_frontend/a83406a207ef2c319d378f4768343308.svg"/></div>
