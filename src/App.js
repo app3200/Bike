@@ -13,6 +13,7 @@ import {Planselector} from "./Components/checkoutflow/planselector"
 import {Checkout} from "./Components/checkoutflow/Checkout"
 import { Home } from "./Components/Home/Home";
 import { NewBike } from "./Components/Authentication/NewBike";
+import { Summary_purchsed } from "./Components/checkoutflow/Summary_purchased";
 
 
 
@@ -23,6 +24,7 @@ function App() {
       {/* <Navbar></Navbar>
      <Hero></Hero>  */}
      <Routes>
+       {/* <Route path="/" element={<Summary_purchsed/>}></Route> */}
        <Route path="/" element={<Home></Home>}></Route>
        <Route path="/login" element={<Login/>}></Route>
        <Route path="/otp" element={<Otp/>}></Route>
