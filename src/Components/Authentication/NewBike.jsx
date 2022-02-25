@@ -81,6 +81,47 @@ export function NewBike(){
      
     </div>
     </div>
-    
+    <div className="kxJppC"> 
+        <div className="ixQUtd">
+            <div className="hbBOrH">
+                <div className="hxAKGH">
+                    <div className="ilkjKQ">
+                    <img src="https://www.acko.com/static/realm/ackoWhiteLogo.png" alt="ACKO White LOGO" class="sc-drMfKT fKppdK"/>
+                    <p class="sc-jDwBTQ sc-fgfRvd sEINP">Acko General Insurance Ltd.</p>
+                    <p class="sc-jDwBTQ sc-hIVACf eqMpUa">2nd Floor, #36/5, Hustlehub One East, Somasandrapalya, 27th Main Rd, Sector 2, HSR Layout, Bengaluru, Karnataka 560102</p>
+                    <div class="sc-htoDjs sc-dnqmqq sc-eXNvrr brkHuk"></div>
+                    <p class="sc-jDwBTQ sc-kXeGPI fpKzld">We’re Socially Active</p>
+                    <div className="kQLRct">
+                    <a href="https://www.facebook.com/ackoinsurance/" target="_blank" class="sc-ugnQR eKmKOu"><img alt="Facebook Icon" src="https://www.acko.com/static/realm/icons/facebookFooterIcon.svg"/></a>
+                    <a href="https://twitter.com/AckoInsurance" target="_blank" class="sc-ugnQR eKmKOu"><img alt="Twitter Icon" src="https://www.acko.com/static/realm/icons/twitterFooterIcon.svg"/></a>
+                    <a href="https://www.instagram.com/ackoinsurance/" target="_blank" class="sc-ugnQR eKmKOu"><img alt="Instagram Icon" src="https://www.acko.com/static/realm/icons/instagramFooterIcon.svg"/></a>
+                    <a href="https://www.youtube.com/channel/UCn1gqDU9TqbR8u6_10S0RJA" target="_blank" class="sc-ugnQR eKmKOu"><img alt="Youtube Icon" src="https://www.acko.com/static/realm/icons/youtubeFooterIcon.svg"/></a>
+                    <a href="https://www.linkedin.com/company/acko/" target="_blank" class="sc-ugnQR eKmKOu"><img alt="LinkedIn Icon" src="https://www.acko.com/static/realm/icons/linkedinFooterIcon.svg"/></a>
+                    <div class="sc-htoDjs sc-dnqmqq sc-kQsIoO gbCnyw"></div>
+                    </div>
+                    </div>
+                    <div className="dxjDwC">
+                        <p class="sc-jDwBTQ sc-gPzReC boTHzb">Company</p>
+                        <ul class="sc-jrIrqw ktudoD"><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/about-us/" target="_blank" class="sc-iybRtq hDfsUb">About Us</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/board-of-directors/" target="_blank" class="sc-iybRtq hDfsUb">Board Of Directors</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://careers.acko.com/" target="_blank" class="sc-iybRtq hDfsUb">Careers</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/media-kit/" target="_blank" class="sc-iybRtq hDfsUb">Media Kit</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/articles/" target="_blank" class="sc-iybRtq hDfsUb">Articles</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/ackology/" target="_blank" class="sc-iybRtq hDfsUb">Ackology - The Tech Blog</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/partnerships/" target="_blank" class="sc-iybRtq hDfsUb">Partnerships</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/sitemap/" target="_blank" class="sc-iybRtq hDfsUb">Sitemap</a></li></ul>
+                        <div class="sc-htoDjs sc-dnqmqq sc-kQsIoO gbCnyw"></div>
+                    </div>
+                    <div class="sc-htoDjs sc-dnqmqq sc-cBdUnI dxjDwC"><p class="sc-jDwBTQ sc-gPzReC boTHzb">Support</p><ul class="sc-jrIrqw ktudoD"><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/cancellation-and-refund-policy/" target="_blank" class="sc-iybRtq hDfsUb">Cancellations &amp; Refunds</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/customer-service/" target="_blank" class="sc-iybRtq hDfsUb">Customer Service</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/download/" target="_blank" class="sc-iybRtq hDfsUb">Downloads</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/unclaimed-amount.pdf" target="_blank" class="sc-iybRtq hDfsUb">Unclaimed Amount</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.irdai.gov.in/" target="_blank" class="sc-iybRtq hDfsUb">IRDAI Website</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/commercial-insurance/" target="_blank" class="sc-iybRtq hDfsUb">Other Products</a></li><li class="sc-hjRWVT bvgUCg"><a href="/nodal-officers-mact-claims/" target="_blank" class="sc-iybRtq hDfsUb">ACKO Nodal Officers (MACT Claims)</a></li></ul><div class="sc-htoDjs sc-dnqmqq sc-kQsIoO gbCnyw"></div></div>
+                    <div class="sc-htoDjs sc-dnqmqq sc-cBdUnI dxjDwC"><p class="sc-jDwBTQ sc-gPzReC boTHzb">Legal</p><ul class="sc-jrIrqw ktudoD"><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/wp-content/uploads/2018/02/Whistleblower-policy.pdf" target="_blank" class="sc-iybRtq hDfsUb">Whistleblower Policy</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/public-disclosure/" target="_blank" class="sc-iybRtq hDfsUb">Public Disclosure</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/financials-disclosures/" target="_blank" class="sc-iybRtq hDfsUb">Financials &amp; Disclosures</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/privacy-policy/" target="_blank" class="sc-iybRtq hDfsUb">Privacy Policy</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/terms-and-conditions/" target="_blank" class="sc-iybRtq hDfsUb">Terms &amp; Conditions</a></li><li class="sc-hjRWVT bvgUCg"><a href="/offers-terms-and-conditions/" target="_blank" class="sc-iybRtq hDfsUb">Offer terms &amp; conditions</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/wp-content/uploads/2018/07/policy-on-stewardship-code.pdf" target="_blank" class="sc-iybRtq hDfsUb">Stewardship Code</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/wp-content/uploads/2020/06/anti-fraud-policy.pdf" target="_blank" class="sc-iybRtq hDfsUb">Anti Fraud Policy</a></li><li class="sc-hjRWVT bvgUCg"><a href="https://www.acko.com/disclaimer/" target="_blank" class="sc-iybRtq hDfsUb">Disclaimer</a></li></ul></div>
+                </div>
+                <div className="ceLWpU">
+                        <div className="jFKcV">
+                        <div class="sc-htoDjs sc-dnqmqq sc-hBbWxd cOJEBX"><p class="sc-jDwBTQ sc-iomxrj kGUaBw"><p class="sc-jDwBTQ sc-dvCyap dRGpME">CIN:</p> U66000MH2016PLC287385</p><p class="sc-jDwBTQ sc-iomxrj kGUaBw"><p class="sc-jDwBTQ sc-dvCyap dRGpME">IRDAI Registration No:</p> 157</p><p class="sc-jDwBTQ sc-iomxrj kGUaBw"><p class="sc-jDwBTQ sc-dvCyap dRGpME">Category:</p> Non-Life Insurance</p></div>
+                        </div>
+                        <p class="sc-jDwBTQ sc-iFMziU kjjanz">The ratings are derived from reviews and feedback received from Google and Facebook users on their respective platforms.</p>
+                        <p class="sc-jDwBTQ sc-iFMziU kjjanz">Trade logo displayed above belongs to Acko Technology &amp; Services Pvt Ltd and used by Acko General insurance Limited under License.</p>
+                        <p class="sc-jDwBTQ sc-iFMziU kjjanz">For more details on risk factors, terms and conditions, please refer to the policy wordings before concluding a sale.</p>
+                        <p class="sc-jDwBTQ sc-iFMziU kjjanz">*ACKO General Insurance has been recognised as one of the 'Most
+            Trusted Brands of India 2021' by Team Marksmen and their Media
+            Partner- CNBCTV18</p>
+            <p class="sc-jDwBTQ sc-drKuOJ kgMFVK">*T&amp;C Apply</p>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 }
