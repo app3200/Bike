@@ -26,6 +26,18 @@
 <h2>:writing_hand: Description:</h2>
 <div>
   <ul>
-    <li>Home Page</li>
-    <div> On Home page, User is able to see different categories of insurance. In theses project we have made the insurance for "Bikes".</div>
+    <li><h3> Home Page</h3</li>
+    <div> On Home page, User is able to see different categories of insurance. In theses project we have made the insurance for "Bikes".
+    <img src="https://user-images.githubusercontent.com/93375124/155854933-b48774c3-3503-4b67-b42f-eb78bc75d6a1.png" />
+       By scrolling the page you can see the Acko patners policy and reviews of app.
+   <br/> <img src="https://user-images.githubusercontent.com/93375124/155855126-ebdba06a-a045-43dd-9585-607846c41cfc.png"/></div>
+    <br/>
+    <li><h3> Login Page</h3></li>
+    <div>
+     On clicking "Login" in Home page ,User redirects to Login Page. In Login page user needs to enter the Mobile number to get signin.After entering the 10 digits "GET OTP" is enabled. User is able to see the popup of OTP And redirects to "OTP page".
+    <img src="https://user-images.githubusercontent.com/93375124/155855323-a7e6eb0c-0168-421f-b777-d6b8ad59fd25.png"/>
+    </div>
+    <li><h3> OTP Page</h3</li>
+    <div> User needs to enter the four digit OTP. IF the OTP is valid then the popup show as "User is verified" else it shows as "Wrong Credentials".
+    <img src="https://user-images.githubusercontent.com/93375124/155855495-fe731112-876c-4818-b2b2-b1cac7bb524f.png"/></div> 
   </ul></div>
