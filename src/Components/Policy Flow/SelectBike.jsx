@@ -2,11 +2,12 @@
 
 import { Link } from "react-router-dom"
 import { Initialpage } from "./Initialpage"
-
+import { useSelector } from "react-redux"
 import "./SelectBike.css"
 
 
 export const SelectBike = () => {
+    const vehicle = useSelector((e) => e.vehicleD);
      return <div id="_next">
         <div className="ackologo">
             <div className="flexlogo">
@@ -24,7 +25,7 @@ export const SelectBike = () => {
         <div className="maininputbox">
             <div className="innermaininputbox">
                 <div className="bikenumberedit">
-                MH40SR1649
+                {vehicle.vehicle_no}
                 
                 <span role="button" ><Link to="/">EDIT</Link></span>
                 </div>

@@ -30,7 +30,7 @@ export const Pricingdiv=({price}) => {
         
             <div className="total_price_show_div">
               <p className="total_text_style">TOTAL</p>
-              <p className="total_text_value_style">₹ {price}</p>
+              <p className="total_text_value_style">₹ {Number(price) + Number((price*18)/100)}</p>
             </div>
         </div>
     </div>

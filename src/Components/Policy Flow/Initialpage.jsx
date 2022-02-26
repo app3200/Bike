@@ -97,7 +97,7 @@ export const Initialpage = () => {
                         </div>
                         </div>
                     </div>
-                    {(priceapprove)?<Link to="/planselector"><button className="Price-btn">View Prices</button></Link>:null}
+                    {(priceapprove)?<Link style={{textDecoration:"none"}} to="/planselector"><button className="Price-btn">View Prices</button></Link>:null}
                     </div>
 
         </div>

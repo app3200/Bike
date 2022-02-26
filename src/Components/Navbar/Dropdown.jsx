@@ -112,9 +112,7 @@ export const Dropdown = () => {
           <a className='dropdown-links' href='/'>
             Third Party Bike Insurance
           </a>
-          <a className='dropdown-links' href='/'>
-            Commercial Car Insurance
-          </a>
+        
         </div>
         <div className='dropdown-box-item'>
           <div className='dropdown-heading-div'>

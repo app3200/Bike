@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { Pricingdiv } from "./pricing_div";
 import "./Summary_purchased.css";
 
@@ -35,7 +36,7 @@ export const Summary_purchsed = () => {
       <div className="ackologo">
         <div className="flexlogo">
           <div className="ackologoimage">
-            <a href="https://www.acko.com">
+            <Link to="/">
               <div className="actualogo">
                 <img
                   src="https://container-app.ackoassets.com/am/myaccount_frontend/4972dde433c8123ca0821f57ef2e9a5c.svg"
@@ -43,10 +44,11 @@ export const Summary_purchsed = () => {
                   className="logoimage"
                 />
               </div>
-            </a>
+              </Link>
           </div>
         </div>
       </div>
+
 
       <div className="infobox_outer">
         <div className="inner_infobox">
@@ -63,7 +65,7 @@ export const Summary_purchsed = () => {
                     <p className="Cp">Verify Phone</p>
                   </div>
                   <div>
-                    <div className="rnum">3</div>
+                    <div className="num1">3</div>
                     <p className="Cp">Review & pay</p>
                   </div>
                 </div>
@@ -103,7 +105,7 @@ export const Summary_purchsed = () => {
 
                     <div style={{ width: "100%" }}>
                       <div className="title_data_div">
-                        <p className="title_text_info">Policy Start Data</p>
+                        <p className="title_text_info">Policy Start Date</p>
                         <p className="data_text_info">{output}</p>
                       </div>
                     </div>
@@ -146,7 +148,7 @@ export const Summary_purchsed = () => {
 
                   <div className="updates_on_wsp_outer">
                     <div className="left_updated_text">
-                      <div className="unticked"></div>
+                      <input type="checkbox"/>
                       <p style={{ marginLeft: "10px" }}>
                         Get policy on WhatsApp
                       </p>
