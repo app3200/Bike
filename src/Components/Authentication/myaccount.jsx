@@ -79,7 +79,7 @@ export const Myaccount = () => {
                 {k}
               </p>
 
-             <Link to="/myprofile">
+             <Link  style={{textDecoration:"none"}}to="/myprofile">
              <p className="line">
                 <img src="	https://myaccount.ackoassets.com/static/images/header-icons/my-profile-v2.svg" />
                 My Profile

@@ -1,22 +1,22 @@
 import logo from "./logo.svg";
 // import "./App.css";
 // import { SelectBike } from "./Components/Policy Flow/SelectBike";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Hero } from "./components/HeroSection/Hero";
-import {Login} from "./components/Authentication/login"
+import { Navbar } from "./Components/Navbar/Navbar";
+import { Hero } from "./Components/HeroSection/Hero";
+import {Login} from "./Components/Authentication/login"
 import {Routes,Route} from "react-router-dom"
-import { Otp } from "./components/Authentication/otp";
-import {Myaccount} from "./components/Authentication/myaccount"
-import {SelectBike} from "./components/Policy Flow/SelectBike"
-import {Navbar2} from "./components/checkoutflow/Navbar2"
-import {Planselector} from "./components/checkoutflow/planselector"
-import {Checkout} from "./components/checkoutflow/Checkout"
-import { Home } from "./components/Home/Home";
-import { NewBike } from "./components/Authentication/NewBike";
-import { Summary_purchsed } from "./components/checkoutflow/Summary_purchased";
-import{ PersonalDetails} from "./components/Login/PersonalDetails"
-import{ Paymentref} from "./components/Login/Paymentref"
-import{ MyProfile} from "./components/Login/MyProfile"
+import { Otp } from "./Components/Authentication/otp";
+import {Myaccount} from "./Components/Authentication/myaccount"
+import {SelectBike} from "./Components/Policy Flow/SelectBike"
+import {Navbar2} from "./Components/checkoutflow/Navbar2"
+import {Planselector} from "./Components/checkoutflow/planselector"
+import {Checkout} from "./Components/checkoutflow/Checkout"
+import { Home } from "./Components/Home/Home";
+import { NewBike } from "./Components/Authentication/NewBike";
+import { Summary_purchsed } from "./Components/checkoutflow/Summary_purchased";
+import{ PersonalDetails} from "./Components/Login/PersonalDetails"
+import{ Paymentref} from "./Components/Login/Paymentref"
+import{ MyProfile} from "./Components/Login/MyProfile"
 
 
 function App() {
