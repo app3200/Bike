@@ -4,7 +4,7 @@
 <div>In this project we have tried to enhance the cloning of “Acko Insurance” website. We had build up all our efforts to do our best in this project.We have implemented all our knowledge & learning skills to look the project at its best.By using Acko, we can make our car, bike & health insurances instantly.</div>
 <p align="center" font-weight="bold" > "Apply for insurance at Acko & make your life secured"</p>
 
-<h2> Deploymeny</h2>
+<h2 > :computer: Deploy Link:</h2>
 <a href="https://acko-clone.netlify.app/" type="_blank">https://acko-clone.netlify.app/</a>
 <h2> :man_technologist: Tech Stack:</h2>
 <div >
@@ -51,8 +51,15 @@
    <li><h3> Bike Model:</h3></li>
    <div> User able to see the Bike Number. Can edit the bike number by clicking on "EDIT".User can select the bike model, brought year and policy status from dropdown.and redirects the preview details. Here User is able to see all his bike details as per he entered.Click on "View Prices" will direct to plans page.
      <br/><br/>
-     <img src="https://user-images.githubusercontent.com/93375124/155856501-c9951398-f0ef-497c-9fcd-cd9ecd4bc85a.png"/><hr/>
+     <table>
+       <tbody>
+         <tr><td >
+                <img src="https://user-images.githubusercontent.com/93375124/155856501-c9951398-f0ef-497c-9fcd-cd9ecd4bc85a.png" />
+           </td> &ensp; &ensp;<td >
   <img src="https://user-images.githubusercontent.com/93375124/155856546-921a7ab9-2a3c-4275-a585-4b0c696514da.png " /></div> 
+           </td>
+         </tr></tbody>
+     </table>
   <li><h3> Bike Plans:</h3></li>
    <div> There are two different plans one is Third party plan  and other is Comprehensive Plan. Third party plan covers only third party losses, damage to your bike is not covered.Comprehensive Plan covering damages to third-party and to your own bike.For both plans user can add personal accident cover. After selecting the options click on "Buy now". 
      <br/><br/>
@@ -65,3 +72,23 @@
 </div>  -->
   </ul></div>
 
+<h2> :book: Creators:</h2>
+<ol>
+  <h3> <li> Keshav Manuja    <a href="https://github.com/KeshavManuja/" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
+  <a href=" https://www.linkedin.com/in/keshav-manuja-b626ab196/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  <h3> <li> Aditya Prasad Pattanaik   <a href="https://github.com/app3200" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
+  <a href=" https://www.linkedin.com/in/app3200/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  
+   <h3> <li> Durgesh Kumar Rai    <a href="https://github.com/durgeshrai633" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
+  <a href=" https://www.linkedin.com/in/durgeshrai633/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  
+   
+ 
+  <h3>  <li>Ankit Mungole   <a href="https://github.com/ankitmung" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
+  <a href="https://www.linkedin.com/in/ankit-mungole-a0a89821b/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  
+  <h3>  <li>Bhavani Dasari   <a href="https://github.com/BHAVANI-DASARI" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
+  <a href="https://www.linkedin.com/in/bhavani-dasari-906134140/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  
+  </ol>
+  
