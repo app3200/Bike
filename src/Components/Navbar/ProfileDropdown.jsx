@@ -1,4 +1,9 @@
-export const ProfileDropdown = ({phone}) => {
+import { Link } from "react-router-dom";
+
+export const ProfileDropdown = ({phone,logout}) => {
+  
+
+    let date=new Date().toLocaleString()
   return (
     <div className='profile-dropdown'>
       <div className='profile-wrapper'>
@@ -49,6 +54,7 @@ export const ProfileDropdown = ({phone}) => {
               </div>
               <div style={{ textDecoration: "none", cursor: "pointer" }}>
                 <div className='my-policies-div'>
+                  <Link style={{textDecoration:"none"}} to="/myprofile">
                   <div className='mypolicies'>
                     <img
                       height='20px'
@@ -56,14 +62,16 @@ export const ProfileDropdown = ({phone}) => {
                       src='https://myaccount.ackoassets.com/static/images/header-icons/my-profile-v2.svg'
                       className='fpCRcM'
                     ></img>
+                    
                     <p className='eHEzhk'>My profile</p>
                   </div>
+                  </Link>
                 </div>
               </div>
               <div className='fInLFi'></div>
               <div className='kemEgE'>
                 <div className='gpqLmW'>
-                  <p className='dhQsMQ'>Logout</p>
+                  <p className='dhQsMQ' onClick={()=>{logout()}}>Logout</p>
                   <span className='eHCRri'>
                     <svg
                       width='16'
@@ -98,7 +106,7 @@ export const ProfileDropdown = ({phone}) => {
                 </div>
               </div>
             </div>
-            <p className='iZyeYs'>Last visited on : Feb 23, 10:31 PM</p>
+            <p className='iZyeYs'>Last visited on : {date}</p>
           </div>
         </div>
       </div>

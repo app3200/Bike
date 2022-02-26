@@ -9,11 +9,18 @@ export const Navbar = () => {
   const [showProductsDropdown, setshowProductsDropdown] = useState(false);
   const [showResourcesDropdown, setshowResourcesDropdown] = useState(false);
   const [showLoginDropDown, setshowLoginDropdown] = useState(false);
+
   const phone = useSelector((e) => e.phone);
-  console.log(phone);
-  // const [isLoggedin, setLogin] = useState(phone != undefined ? true : false);
-  const [isLoggedin, setLogin] = useState(false);
-  console.log(isLoggedin);
+  // console.log(phone);
+  const [isLoggedin, setLogin] = useState(phone != "" ? true : false);
+  function changelogout(){
+    setLogin(false) 
+    localStorage.removeItem("store")
+    window.location.reload()
+
+    // console.log(isLoggedin)
+  }
+  
   return (
     <header>
       <nav>
@@ -217,7 +224,7 @@ export const Navbar = () => {
           {showProductsDropdown ? <Triangle /> : ""}
         </div>
         {showProductsDropdown ? <Dropdown /> : ""}
-        {showLoginDropDown ? <ProfileDropdown phone={phone} /> : ""}
+        {showLoginDropDown ? <ProfileDropdown  logout={changelogout} phone={phone} /> : ""}
       </nav>
     </header>
   );
