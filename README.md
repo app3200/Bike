@@ -24,20 +24,44 @@
   <li>Get updates about insurance</li> 
 </ol>
 <h2>:writing_hand: Description:</h2>
-<div>
-  <ul>
-    <li><h3> Home Page</h3</li>
-    <div> On Home page, User is able to see different categories of insurance. In theses project we have made the insurance for "Bikes".
+<div><ul>
+  <li><h3> Home Page:</h3></li>
+  <div> On Home page, User is able to see different categories of insurance. In theses project we have made the insurance for "Bikes".<br/>
     <img src="https://user-images.githubusercontent.com/93375124/155854933-b48774c3-3503-4b67-b42f-eb78bc75d6a1.png" />
-       By scrolling the page you can see the Acko patners policy and reviews of app.
-   <br/> <img src="https://user-images.githubusercontent.com/93375124/155855126-ebdba06a-a045-43dd-9585-607846c41cfc.png"/></div>
+    <br/><br/>   By scrolling the page you can see the Acko patners policy and reviews of app.
+  <br/> <br/> <img src="https://user-images.githubusercontent.com/93375124/155855126-ebdba06a-a045-43dd-9585-607846c41cfc.png"/></div>
     <br/>
-    <li><h3> Login Page</h3></li>
-    <div>
-     On clicking "Login" in Home page ,User redirects to Login Page. In Login page user needs to enter the Mobile number to get signin.After entering the 10 digits "GET OTP" is enabled. User is able to see the popup of OTP And redirects to "OTP page".
+    <li><h3> Login Page:</h3></li>
+  <div>
+     On clicking "Login" in Home page ,User redirects to Login Page. In Login page user needs to enter the Mobile number to get signin.After entering the 10 digits "GET OTP" is enabled. User is able to see the popup of OTP And redirects to "OTP page".<br/>
+    <br/>
     <img src="https://user-images.githubusercontent.com/93375124/155855323-a7e6eb0c-0168-421f-b777-d6b8ad59fd25.png"/>
     </div>
-    <li><h3> OTP Page</h3</li>
-    <div> User needs to enter the four digit OTP. IF the OTP is valid then the popup show as "User is verified" else it shows as "Wrong Credentials".
+  <li><h3> OTP Page:</h3></li>
+    <div> User needs to enter the four digit OTP.If the User forgots the OTP, click on "Resend OTP". User able to see the new OTP again. If the OTP is valid then the popup show as "User is verified" else it shows as "Wrong Credentials".   <br/>
     <img src="https://user-images.githubusercontent.com/93375124/155855495-fe731112-876c-4818-b2b2-b1cac7bb524f.png"/></div> 
+  <li> <h3> My policies and New policy:</h3></li>
+  <div> In these page, User can see all the poicies on his account and can register to new policies too. On clicking on "Bike", user will proceed to make new policy or renewal the policy.
+    <br/><br/>
+  <img src="https://user-images.githubusercontent.com/93375124/155856194-6c67130e-f66b-4e47-9583-c06d8a5a8b2d.png "/></div> 
+  <li><h3> Bike Insurance:</h3></li>
+   <div> User needs to enter the Bike number as per RC and then directs to the bike's model page.
+    <br/><br/>
+  <img src="https://user-images.githubusercontent.com/93375124/155856256-34e3abed-dde0-4846-8b4c-7fe2247dc684.png "/></div> 
+   <li><h3> Bike Model:</h3></li>
+   <div> User able to see the Bike Number. Can edit the bike number by clicking on "EDIT".User can select the bike model, brought year and policy status from dropdown.and redirects the preview details. Here User is able to see all his bike details as per he entered.Click on "View Prices" will direct to plans page.
+     <br/><br/>
+     <img src="https://user-images.githubusercontent.com/93375124/155856501-c9951398-f0ef-497c-9fcd-cd9ecd4bc85a.png"/><hr/>
+  <img src="https://user-images.githubusercontent.com/93375124/155856546-921a7ab9-2a3c-4275-a585-4b0c696514da.png " /></div> 
+  <li><h3> Bike Plans:</h3></li>
+   <div> There are two different plans one is Third party plan  and other is Comprehensive Plan. Third party plan covers only third party losses, damage to your bike is not covered.Comprehensive Plan covering damages to third-party and to your own bike.For both plans user can add personal accident cover. After selecting the options click on "Buy now". 
+     <br/><br/>
+     <img src="https://user-images.githubusercontent.com/93375124/155856873-f6f75ed8-47a6-4801-b15f-4cea505585b2.png"/><hr/>
+</div> 
+<!--    <li><h3> Bike Plans:</h3></li>
+   <div> There are two different plans one is Third party plan  and other is Comprehensive Plan. Third party plan covers only third party losses, damage to your bike is not covered.Comprehensive Plan covering damages to third-party and to your own bike.For both plans user can add personal accident cover. After selecting the options click on "Buy now". 
+     <br/><br/>
+     <img src="https://user-images.githubusercontent.com/93375124/155856873-f6f75ed8-47a6-4801-b15f-4cea505585b2.png"/><hr/>
+</div>  -->
   </ul></div>
+
