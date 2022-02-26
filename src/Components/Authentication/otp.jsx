@@ -68,7 +68,7 @@ export const Otp=()=>{
             <div><img src="https://container-app.ackoassets.com/am/myaccount_frontend/92201f8bb8b3b9820539e248c8bd3401.svg"/></div>
             <div> <p className="p">OTP has been sent to</p></div>
               <div>  <p className="p2">+91{phone}
-             <Link to="/"> <span >
+             <Link to="/login"> <span >
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
   <path d="M5.17505 9.0749L10.5001 3.7499C10.8001 3.4499 10.8001 2.9999 10.5001 2.6999L9.30005 1.4999C9.00005 1.1999 8.55005 1.1999 8.25005 1.4999L2.92505 6.8249L5.17505 9.0749Z" stroke="#373737" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"></path>
   <path d="M3.3751 10.275L1.5751 10.725C1.4251 10.725 1.3501 10.65 1.3501 10.5L1.8001 8.69998C1.8001 8.54998 2.0251 8.47498 2.1001 8.62498L3.4501 9.97498C3.5251 10.05 3.4501 10.2 3.3751 10.275Z" fill="#373737"></path>

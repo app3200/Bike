@@ -2,11 +2,10 @@ import { useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { Pricingdiv } from "./pricing_div";
 import "./Summary_purchased.css";
-import axios from "axios"
+import axios from "axios";
 
 export const Summary_purchsed = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const vehicle = useSelector((e) => e.vehicleD);
 
   const user = useSelector((e) => e.personalD);
@@ -15,76 +14,84 @@ export const Summary_purchsed = () => {
 
   // Razor pay start
 
-function loadScript(src) {
-  return new Promise((resolve) => {
+  function loadScript(src) {
+    return new Promise((resolve) => {
       const script = document.createElement("script");
       script.src = src;
       script.onload = () => {
-          resolve(true);
+        resolve(true);
       };
       script.onerror = () => {
-          resolve(false);
+        resolve(false);
       };
       document.body.appendChild(script);
-  });
-}
+    });
+  }
 
-async function displayRazorpay() {
-  const res = await loadScript(
+  async function displayRazorpay() {
+    const res = await loadScript(
       "https://checkout.razorpay.com/v1/checkout.js"
-  );
+    );
 
-  if (!res) {
+    if (!res) {
       alert("Razorpay SDK failed to load. Are you online?");
       return;
-  }
+    }
 
-  const result = await axios.post("https://razorpay-acko.herokuapp.com/payment/orders");
+    const result = await axios.post(
+      `https://razorpay-acko.herokuapp.com/payment/orders/${
+        Math.ceil(Number(vehicle.i_amt) + Number((vehicle.i_amt * 18) / 100)) *
+        100
+      }`
+    );
 
-  if (!result) {
+    if (!result) {
       alert("Server error. Are you online?");
       return;
-  }
+    }
 
-  const { amount, id: order_id, currency } = result.data;
+    const { amount, id: order_id, currency } = result.data;
 
-  const options = {
+    const options = {
       key: "rzp_test_ZZhgWf11KYQDCc", // Enter the Key ID generated from the Dashboard
-      amount: amount.toString(),
+      amount: Math.ceil(
+        Number(vehicle.i_amt) + Number((vehicle.i_amt * 18) / 100)
+      ).toString(),
       currency: currency,
       name: "Ackobike",
       description: "Test Transaction",
 
       order_id: order_id,
       handler: async function (response) {
-          const data = {
-              orderCreationId: order_id,
-              razorpayPaymentId: response.razorpay_payment_id,
-              razorpayOrderId: response.razorpay_order_id,
-              razorpaySignature: response.razorpay_signature,
-          };
-          console.log(data)
-      
-          navigate("/")
-          
+        const data = {
+          orderCreationId: order_id,
+          razorpayPaymentId: response.razorpay_payment_id,
+          razorpayOrderId: response.razorpay_order_id,
+          razorpaySignature: response.razorpay_signature,
+        };
+        console.log(data);
+
+        navigate("/");
       },
       prefill: {
-          name: "Keshav",
-          email: "Keshavmanuja12@gmail.com",
-          contact: "7210702727",
+        amount: Math.ceil(
+          Number(vehicle.i_amt) + Number((vehicle.i_amt * 18) / 100)
+        ),
+        name: user.name,
+        email: user.email,
+        contact: phone,
       },
       notes: {
-          address: "Acko-Insurance Ltd.",
+        address: "Acko-Insurance Ltd.",
       },
       theme: {
-          color: "#61dafb",
+        color: "#61dafb",
       },
-  };
+    };
 
-  const paymentObject = new window.Razorpay(options);
-  paymentObject.open();
-}
-
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  }
 
   // console.log(vehicle)
   const monthNames = [
@@ -120,11 +127,10 @@ async function displayRazorpay() {
                   className="logoimage"
                 />
               </div>
-              </Link>
+            </Link>
           </div>
         </div>
       </div>
-
 
       <div className="infobox_outer">
         <div className="inner_infobox">
@@ -224,7 +230,7 @@ async function displayRazorpay() {
 
                   <div className="updates_on_wsp_outer">
                     <div className="left_updated_text">
-                      <input type="checkbox"/>
+                      <input type="checkbox" />
                       <p style={{ marginLeft: "10px" }}>
                         Get policy on WhatsApp
                       </p>
@@ -238,7 +244,13 @@ async function displayRazorpay() {
                   </div>
 
                   <div className="price_button_div">
-                    <button onClick={displayRazorpay} className="Paybutton">Pay ₹{vehicle.i_amt}</button>
+                    <button onClick={displayRazorpay} className="Paybutton">
+                      Pay ₹
+                      {Math.ceil(
+                        Number(vehicle.i_amt) +
+                          Number((vehicle.i_amt * 18) / 100)
+                      )}
+                    </button>
                     <div className="trustedby_div">
                       <svg
                         width="24"
