@@ -91,4 +91,12 @@
   <a href="https://www.linkedin.com/in/bhavani-dasari-906134140/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
   
   </ol>
+  <h2> GitHub clone</h2>
+  <ol>
+  <li> Clone repo "https://github.com/KeshavManuja/ackobike"</li>
+  <li> Open the Vscode</li>
+  <li> Run "npm init -y"</li>
+  <li> Run "npm start"</li>
+  <li> In browser able to see "Homepage"</li>
+  <li> Navigate to project flow</li></ol>
   
