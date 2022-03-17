@@ -5,6 +5,7 @@ header {
   position: relative;
   padding: 20px 0px;
   background: rgb(94, 39, 201);
+  border: 2px solid black;
 }
 @media (min-width: 769px) and (max-width: 1220px) {
 }
@@ -30,6 +31,7 @@ nav {
   flex-direction: column;
   height: 30px;
   max-width: 1170px;
+  border: 2px solid red;
 }
 .nav-container {
   width: 100%;
