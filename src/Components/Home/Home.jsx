@@ -6,12 +6,12 @@ import { Footer } from "./LandingSection/Footer";
 import { Reviews } from "./LandingSection/Reviews";
 
 export function Home(){
-    return <>
+    return <div >
         <Navbar></Navbar>
         <Hero></Hero>
         <Reviews></Reviews>
         <CompanyLogs></CompanyLogs>
         <Ackolove></Ackolove>
         <Footer></Footer>
-    </>
+    </div>
 }

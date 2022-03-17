@@ -249,3 +249,31 @@
   font-size: 14px;
   color: rgb(255, 255, 255);
 }
+@media  only screen and (max-width:768px) {
+    .left-image{
+      display: none;
+    }
+    .hero-div{
+      background-color: white;
+    }
+    .kdQsEA{
+      justify-content: space-evenly;
+    }
+    .hJRWuT{
+      width: 95% !important;
+    }
+    #responsive_class_laptopsize{
+      display: none;
+    }
+    #responsive_class_768{
+      display: block;
+      background-color: aqua;
+      width: 200px;
+    }
+
+   
+  
+}
+#responsive_class_768{
+  display: none;
+}
