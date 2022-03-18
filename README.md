@@ -95,7 +95,7 @@
   <ol>
   <li> Clone repo "https://github.com/KeshavManuja/ackobike"</li>
   <li> Open the Vscode</li>
-  <li> Run "npm init -y"</li>
+  <li> Run "npm i"</li>
   <li> Run "npm start"</li>
   <li> In browser able to see "Homepage"</li>
   <li> Navigate to project flow</li></ol>
