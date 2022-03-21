@@ -75,20 +75,20 @@
 <h2> :book: Creators:</h2>
 <ol>
   <h3> <li> Keshav Manuja    <a href="https://github.com/KeshavManuja/" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
-  <a href=" https://www.linkedin.com/in/keshav-manuja-b626ab196/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  <a href=" https://www.linkedin.com/in/keshav-manuja-b626ab196/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504923.png?token=exp=1647838949~hmac=f89a48390f12ff63e16cf7abeb0b117c" width="25" height="25"/></a> </li></h3>
   <h3> <li> Aditya Prasad Pattanaik   <a href="https://github.com/app3200" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
-  <a href=" https://www.linkedin.com/in/app3200/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  <a href=" https://www.linkedin.com/in/app3200/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504923.png?token=exp=1647838949~hmac=f89a48390f12ff63e16cf7abeb0b117c" width="25" height="25"/></a> </li></h3>
   
    <h3> <li> Durgesh Kumar Rai    <a href="https://github.com/durgeshrai633" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
-  <a href=" https://www.linkedin.com/in/durgeshrai633/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  <a href=" https://www.linkedin.com/in/durgeshrai633/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504923.png?token=exp=1647838949~hmac=f89a48390f12ff63e16cf7abeb0b117c" width="25" height="25"/></a> </li></h3>
   
    
  
   <h3>  <li>Ankit Mungole   <a href="https://github.com/ankitmung" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
-  <a href="https://www.linkedin.com/in/ankit-mungole-a0a89821b/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  <a href="https://www.linkedin.com/in/ankit-mungole-a0a89821b/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504923.png?token=exp=1647838949~hmac=f89a48390f12ff63e16cf7abeb0b117c" width="25" height="25"/></a> </li></h3>
   
   <h3>  <li>Bhavani Dasari   <a href="https://github.com/BHAVANI-DASARI" type="_blank"> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" width="25" height="25"/></a>
-  <a href="https://www.linkedin.com/in/bhavani-dasari-906134140/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/1377/premium/1377213.png?token=exp=1645913214~hmac=1a8efa4c3a5d913bf15feb5d2e764ab9" width="25" height="25"/></a> </li></h3>
+  <a href="https://www.linkedin.com/in/bhavani-dasari-906134140/" type="_blank"><img src="https://cdn-icons.flaticon.com/png/128/2504/premium/2504923.png?token=exp=1647838949~hmac=f89a48390f12ff63e16cf7abeb0b117c" width="25" height="25"/></a> </li></h3>
   
   </ol>
   <h2> GitHub clone</h2>
