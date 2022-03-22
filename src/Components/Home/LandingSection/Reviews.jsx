@@ -1,5 +1,5 @@
 export function Reviews(){
-    return <div style={{background:"#F6F7FB"}}>
+    return <div id="reviews" style={{background:"#F6F7FB"}}>
         <div style={{display:"flex",width:"80%",margin:"auto"}}>
        <div style={{padding:"15px"}}>
            <h3>Very good experience. Got the settlement done in less than 24 hours.</h3>
@@ -47,7 +47,7 @@ export function Reviews(){
                </div>
                <div style={{marginLeft:"10px",}}>
                <p style={{fontWeight:"bold",margin:"0px"}}>Vinil Kumar</p>
-               <p style={{margin:"0px"}}>Hydrabad</p>
+               <p style={{margin:"0px"}}>Hyderabad</p>
                </div>
               </div>
            </div>
