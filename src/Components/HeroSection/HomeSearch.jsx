@@ -22,13 +22,15 @@ export const HomeSearch = ({ status }) => {
                 alt='car icon'
                 className='dxuNru'
               />
+              <div className="juggad">
               <div className='jCnDwj' style={{ textAlign: "initial" }}>
                 <p className='bmEcnf'>Looking to insure your new car?</p>
                 <p className='iPIVCw'>
                   Save big with our zero commission insurance
                 </p>
               </div>
-              <button className='czglFH'>Get a quote</button>
+              <div className='czglFH'>Get a quote</div>
+              </div>
             </div>
           </div>
         </div>
