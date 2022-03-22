@@ -5,7 +5,7 @@ header {
   position: relative;
   padding: 20px 0px;
   background: rgb(94, 39, 201);
-  border: 2px solid black;
+
 }
 @media (min-width: 769px) and (max-width: 1220px) {
 }
@@ -31,7 +31,6 @@ nav {
   flex-direction: column;
   height: 30px;
   max-width: 1170px;
-  border: 2px solid red;
 }
 .nav-container {
   width: 100%;
@@ -451,4 +450,33 @@ nav {
   line-height: 12px;
   color: rgb(112, 127, 140);
   text-align: left;
+}
+@media only screen and (max-width:768px){
+  .menu-items{
+    display: none;
+  }
+ header,.right-left-nav{
+    background-color: white;
+    
+  }
+  .right-left-nav{
+    color: black;
+  }
+  .nav-p{
+    color: black;
+  }
+  header{
+    padding:2%;
+  }
+}
+@media only screen and (max-width:500px){
+  .nav-p{
+    display: none;
+  }
+  .link-help{
+    display: none;
+  }
+  .svg-nav-1{
+    display: none;
+  }
 }

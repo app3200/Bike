@@ -1,3 +1,6 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
 #logos>div>div>div>img{
     width: 50px;
     margin: 15px;
@@ -14,8 +17,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
- 
+}
+.download{
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 7%;
 }
 #logos{
     margin-top: 30px;
@@ -35,4 +41,101 @@
     font-size: 16px;
     padding: 15px 30px;
 
+}
+.love__Acko{
+    display: flex;
+    width:70%;
+    margin: auto;
+    /* display:flex,
+     width:"70%",
+     margin:"auto"; */
+}
+.img__at__768{
+    display: none;
+}
+
+.atag__link>a{
+    margin-right: 2%;
+}
+.social{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(65, 74, 83) !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flaticon{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.general{
+    display: none;
+}
+.last__footer{
+    width: 85%;
+    margin: auto;
+}
+.footer__outer{
+    display: flex;
+}
+.footer__inner{
+    width: 30%;
+    padding:20px 6% ;
+    box-sizing:border-box ;
+}
+.IRDAI{
+  margin-left: 40px;
+  margin-right: 40px;      
+}
+.last__p{
+    font-weight: bold;
+}
+@media  only screen and (max-width:768px){
+    #reviews{
+        display: none;
+    }
+    .love__Acko{
+        display:flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .footer__outer{
+        display: block;
+        width:100%;
+    }
+    .img__at__lap{
+        display: none;
+    }
+    .img__at__768{
+        display: block;
+        margin: auto;
+    } 
+    .footer__general{
+        display: none;
+    }
+    .footer__inner{
+        width: 100%;
+    }
+    .general{
+        display: block;
+    } 
+    .last__p{
+        margin-top: 10px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: left;
+font-size: 12px;
+font-weight: 400;
+    }
+    .grey{
+        background-color: #F6F7FB;
+        padding-top: 5%;
+    }
+    
+.IRDAI{
+    margin-left: 0;
+}
 }
