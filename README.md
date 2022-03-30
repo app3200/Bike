@@ -5,7 +5,7 @@
 <p align="center" font-weight="bold" > "Apply for insurance at Acko & make your life secured"</p>
 
 <h2 > :computer: Deploy Link:</h2>
-<a href="https://acko-clone.netlify.app/" type="_blank">https://acko-clone.netlify.app/</a>
+<a href="https://acko-clone.netlify.app/" type="_blank">https://unit5clone.netlify.app/</a>
 <h2> :man_technologist: Tech Stack:</h2>
 <div >
   <ol >
