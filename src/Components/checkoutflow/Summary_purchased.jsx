@@ -14,7 +14,86 @@ export const Summary_purchsed = () => {
 
   const phone = useSelector((e) => e.phone);
 
+  // Razor pay start
 
+  function loadScript(src) {
+    return new Promise((resolve) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.onload = () => {
+        resolve(true);
+      };
+      script.onerror = () => {
+        resolve(false);
+      };
+      document.body.appendChild(script);
+    });
+  }
+
+  async function displayRazorpay() {
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js"
+    );
+
+    if (!res) {
+      alert("Razorpay SDK failed to load. Are you online?");
+      return;
+    }
+
+    const result = await axios.post(
+      `https://razorpay-acko.herokuapp.com/payment/orders/${
+        Math.ceil(Number(vehicle.i_amt) + Number((vehicle.i_amt * 18) / 100)) *
+        100
+      }`
+    );
+
+    if (!result) {
+      alert("Server error. Are you online?");
+      return;
+    }
+
+    const { amount, id: order_id, currency } = result.data;
+
+    const options = {
+      key: "rzp_test_ZZhgWf11KYQDCc", // Enter the Key ID generated from the Dashboard
+      amount: Math.ceil(
+        Number(vehicle.i_amt) + Number((vehicle.i_amt * 18) / 100)
+      ).toString(),
+      currency: currency,
+      name: "Ackobike",
+      description: "Test Transaction",
+
+      order_id: order_id,
+      handler: async function (response) {
+        const data = {
+          orderCreationId: order_id,
+          razorpayPaymentId: response.razorpay_payment_id,
+          razorpayOrderId: response.razorpay_order_id,
+          razorpaySignature: response.razorpay_signature,
+        };
+        console.log(data);
+
+        navigate("/");
+      },
+      prefill: {
+        amount: Math.ceil(
+          Number(vehicle.i_amt) + Number((vehicle.i_amt * 18) / 100)
+        ),
+        name: user.name,
+        email: user.email,
+        contact: phone,
+      },
+      notes: {
+        address: "Acko-Insurance Ltd.",
+      },
+      theme: {
+        color: "#61dafb",
+      },
+    };
+
+    const paymentObject = new window.Razorpay(options);
+    paymentObject.open();
+  }
 
 
 
